@@ -116,71 +116,70 @@ window.DERMAPREP_DATA = {
     // ───────── SECCIÓN 9 — Genodermatosis ─────────
     { num:54, titulo:"Bases genéticas de las dermopatías",                   seccion:9,  presente:true  },
     { num:55, titulo:"Genodermatosis específicas",                           seccion:9,  presente:true  },
-    { num:56, titulo:"Genodermatosis adicionales (Vol. 2)",                  seccion:9,  presente:false },
-    { num:57, titulo:"Trastornos del colágeno",                              seccion:9,  presente:false },
-    { num:58, titulo:"Errores innatos del metabolismo",                      seccion:9,  presente:false },
-    { num:59, titulo:"Trastornos de queratinización",                        seccion:9,  presente:false },
-    { num:60, titulo:"Trastornos eritrodérmicos hereditarios",               seccion:9,  presente:false },
+    // ───────── VOLUMEN 2 — Cap. 56-110 PROCESADOS desde PDF ─────────
+    { num:56, titulo:"Trastornos del colágeno hereditarios",                 seccion:9,  presente:true  },
+    { num:57, titulo:"Ictiosis y trastornos de la queratinización",          seccion:9,  presente:true  },
+    { num:58, titulo:"Trastornos eritrodérmicos hereditarios",               seccion:9,  presente:true  },
+    { num:59, titulo:"Anomalías ectodérmicas",                               seccion:9,  presente:true  },
+    { num:60, titulo:"Inmunodeficiencias primarias",                         seccion:9,  presente:true  },
+    { num:61, titulo:"Síndromes neurocutáneos",                              seccion:9,  presente:true  },
     // ───────── SECCIÓN 10 — Pigmentarios ─────────
-    { num:61, titulo:"Biología del pigmento melánico",                       seccion:10, presente:false },
-    { num:62, titulo:"Vitíligo y trastornos hipopigmentarios",               seccion:10, presente:false },
-    { num:63, titulo:"Trastornos pigmentarios mixtos",                       seccion:10, presente:false },
-    { num:64, titulo:"Hiperpigmentaciones adquiridas",                       seccion:10, presente:false },
-    { num:65, titulo:"Melasma, lentigos y alt. pigmentarias",                seccion:10, presente:false },
-    { num:66, titulo:"Tumores melanocíticos: nevus",                         seccion:10, presente:false },
-    { num:67, titulo:"Melanoma cutáneo",                                     seccion:10, presente:false },
+    { num:62, titulo:"Mosaicismo y lesiones lineales",                       seccion:10, presente:true  },
+    { num:63, titulo:"Dermopatías metabólicas",                              seccion:10, presente:true  },
+    { num:64, titulo:"Trastornos del desarrollo de la piel",                 seccion:10, presente:true  },
+    { num:65, titulo:"Biología de los melanocitos",                          seccion:10, presente:true  },
+    { num:66, titulo:"Trastornos de hipopigmentación (incluido vitíligo)",   seccion:10, presente:true  },
+    { num:67, titulo:"Trastornos de hiperpigmentación",                      seccion:10, presente:true  },
+    { num:68, titulo:"Nevos melanocíticos",                                  seccion:10, presente:true  },
+    { num:69, titulo:"Melanoma cutáneo",                                     seccion:10, presente:true  },
     // ───────── SECCIÓN 11 — Pelo, uñas, mucosas ─────────
-    { num:68, titulo:"Biología del pelo",                                    seccion:11, presente:false },
-    { num:69, titulo:"Alopecias no cicatriciales",                           seccion:11, presente:false },
-    { num:70, titulo:"Alopecias cicatriciales",                              seccion:11, presente:false },
-    { num:71, titulo:"Trastornos ungueales",                                 seccion:11, presente:false },
-    { num:72, titulo:"Enfermedades de las mucosas",                          seccion:11, presente:false },
-    { num:73, titulo:"Hipertricosis e hirsutismo",                           seccion:11, presente:false },
+    { num:70, titulo:"Biología del pelo",                                    seccion:11, presente:true  },
+    { num:71, titulo:"Alopecias",                                            seccion:11, presente:true  },
+    { num:72, titulo:"Hipertricosis e hirsutismo",                           seccion:11, presente:true  },
+    { num:73, titulo:"Trastornos de la uña",                                 seccion:11, presente:true  },
+    { num:74, titulo:"Enfermedades de las mucosas orales y genitales",       seccion:11, presente:true  },
     // ───────── SECCIÓN 12 — Infecciones ─────────
-    { num:74, titulo:"Infecciones bacterianas (piodermitis)",                seccion:12, presente:false },
-    { num:75, titulo:"Micobacteriosis cutáneas",                             seccion:12, presente:false },
-    { num:76, titulo:"Lepra",                                                seccion:12, presente:false },
-    { num:77, titulo:"Sífilis y otras treponematosis",                       seccion:12, presente:false },
-    { num:78, titulo:"Otras ETS (excluyendo VIH)",                           seccion:12, presente:false },
-    { num:79, titulo:"Infecciones por VIH",                                  seccion:12, presente:false },
-    { num:80, titulo:"Herpesvirus (HSV, VZV)",                               seccion:12, presente:false },
-    { num:81, titulo:"Verrugas e infecciones por VPH",                       seccion:12, presente:false },
-    { num:82, titulo:"Exantemas virales y otras infecciones víricas",        seccion:12, presente:false },
-    { num:83, titulo:"Otras infecciones víricas (Mpox)",                     seccion:12, presente:false },
-    { num:84, titulo:"Micosis superficiales (dermatofitosis)",               seccion:12, presente:false },
-    { num:85, titulo:"Candidiasis",                                          seccion:12, presente:false },
-    { num:86, titulo:"Micosis profundas y subcutáneas",                      seccion:12, presente:false },
-    { num:87, titulo:"Leishmaniasis y parasitosis cutáneas",                 seccion:12, presente:false },
-    { num:88, titulo:"Escabiosis y pediculosis",                             seccion:12, presente:false },
-    { num:89, titulo:"Picaduras, mordeduras y enf. de Lyme",                 seccion:12, presente:false },
+    { num:75, titulo:"Infecciones bacterianas",                              seccion:12, presente:true  },
+    { num:76, titulo:"Infecciones micobacterianas (incl. lepra)",            seccion:12, presente:true  },
+    { num:77, titulo:"Enfermedades fúngicas (micosis)",                      seccion:12, presente:true  },
+    { num:78, titulo:"Rickettsiosis, ehrlichiosis y enf. de Lyme",           seccion:12, presente:true  },
+    { num:79, titulo:"Treponematosis (sífilis y endémicas)",                 seccion:12, presente:true  },
+    { num:80, titulo:"Virus del herpes humanos",                             seccion:12, presente:true  },
+    { num:81, titulo:"Otras infecciones víricas (parvovirus B19 y otros)",   seccion:12, presente:true  },
+    { num:82, titulo:"Verrugas (infección por VPH)",                         seccion:12, presente:true  },
+    { num:83, titulo:"Manifestaciones cutáneas del VIH",                     seccion:12, presente:true  },
+    { num:84, titulo:"Leishmaniasis y otras infecciones por protozoos",      seccion:12, presente:true  },
+    { num:85, titulo:"Otras infestaciones parasitarias",                     seccion:12, presente:true  },
+    { num:86, titulo:"Infestaciones por insectos: escabiosis y otras",       seccion:12, presente:true  },
     // ───────── SECCIÓN 13 — Factores físicos ─────────
-    { num:90, titulo:"Fotodermatosis y trastornos por UV",                   seccion:13, presente:false },
-    { num:91, titulo:"Trastornos por frío y por calor",                      seccion:13, presente:false },
-    { num:92, titulo:"Daños cutáneos por agentes físicos",                   seccion:13, presente:false },
-    { num:93, titulo:"Patomimia y trastornos facticios",                     seccion:13, presente:false },
-    { num:94, titulo:"Trastornos psicocutáneos",                             seccion:13, presente:false },
+    { num:87, titulo:"Trastornos fotodermatológicos",                        seccion:13, presente:true  },
+    { num:88, titulo:"Dermopatías ambientales y deportivas",                 seccion:13, presente:true  },
+    { num:89, titulo:"Trastornos facticios y patomimia",                     seccion:13, presente:true  },
+    { num:90, titulo:"Signos cutáneos de malos tratos",                      seccion:13, presente:true  },
+    { num:91, titulo:"Trastornos psicocutáneos",                             seccion:13, presente:true  },
     // ───────── SECCIÓN 14 — Langerhans/Linfomas ─────────
-    { num:95, titulo:"Histiocitosis de células de Langerhans",               seccion:14, presente:false },
-    { num:96, titulo:"Histiocitosis no Langerhans",                          seccion:14, presente:false },
-    { num:97, titulo:"Mastocitosis",                                         seccion:14, presente:false },
-    { num:98, titulo:"Linfomas cutáneos de células T",                       seccion:14, presente:false },
-    { num:99, titulo:"Linfomas cutáneos de células B",                       seccion:14, presente:false },
-    { num:120,titulo:"Otros infiltrados linfoides cutáneos",                 seccion:14, presente:false },
+    { num:92, titulo:"Histiocitosis y otros trastornos histiocíticos",       seccion:14, presente:true  },
+    { num:93, titulo:"Mastocitosis cutánea",                                 seccion:14, presente:true  },
+    { num:94, titulo:"Linfomas y leucemias cutáneos",                        seccion:14, presente:true  },
     // ───────── SECCIÓN 15 — Conjuntivos ─────────
-    { num:100,titulo:"Atrofias y trastornos del colágeno",                   seccion:15, presente:false },
-    { num:101,titulo:"Trastornos de las fibras elásticas",                   seccion:15, presente:false },
-    { num:102,titulo:"Estrías de distensión, anetodermia",                   seccion:15, presente:false },
-    { num:103,titulo:"Granuloma anular y dermatosis granulomatosas",         seccion:15, presente:false },
+    { num:95, titulo:"Atrofias del tejido conjuntivo",                       seccion:15, presente:true  },
+    { num:96, titulo:"Trastornos perforantes",                               seccion:15, presente:true  },
+    { num:97, titulo:"Seudoxantoma elástico y otras elastopatías",           seccion:15, presente:true  },
+    { num:98, titulo:"Hipertrofias dérmicas (cicatrices y queloides)",       seccion:15, presente:true  },
+    { num:99, titulo:"Trastornos misceláneos del tejido conjuntivo",         seccion:15, presente:true  },
     // ───────── SECCIÓN 16 — Grasa subcutánea ─────────
-    { num:104,titulo:"Paniculitis (lobulillares y mixtas)",                  seccion:16, presente:false },
-    { num:105,titulo:"Lipodistrofias",                                       seccion:16, presente:false },
+    { num:100,titulo:"Paniculitis",                                          seccion:16, presente:true  },
+    { num:101,titulo:"Lipodistrofias",                                       seccion:16, presente:true  },
+    { num:102,titulo:"Otros trastornos del tejido subcutáneo",               seccion:16, presente:true  },
     // ───────── SECCIÓN 17 — Vasculares ─────────
-    { num:106,titulo:"Hemangiomas infantiles",                               seccion:17, presente:false },
-    { num:107,titulo:"Malformaciones vasculares",                            seccion:17, presente:false },
-    { num:108,titulo:"Telangiectasias y trastornos vasculares",              seccion:17, presente:false },
-    { num:109,titulo:"Tumores vasculares benignos y malignos",               seccion:17, presente:false },
-    { num:110,titulo:"Sarcoma de Kaposi y angiosarcoma",                     seccion:17, presente:false },
-    { num:111,titulo:"Trastornos linfáticos cutáneos",                       seccion:17, presente:false },
+    { num:103,titulo:"Hemangiomas infantiles",                               seccion:17, presente:true  },
+    { num:104,titulo:"Malformaciones vasculares",                            seccion:17, presente:true  },
+    { num:105,titulo:"Otros tumores y trastornos vasculares",                seccion:17, presente:true  },
+    { num:106,titulo:"Insuficiencia venosa, livedo y úlceras vasculares",    seccion:17, presente:true  },
+    { num:107,titulo:"Principios de biología tumoral (CBC, CE)",             seccion:17, presente:true  },
+    { num:108,titulo:"Carcinoma basocelular",                                seccion:17, presente:true  },
+    { num:109,titulo:"Carcinoma epidermoide / escamoso",                     seccion:17, presente:true  },
+    { num:110,titulo:"Queratosis actínica y otros precancerosos",            seccion:17, presente:true  },
     // ───────── SECCIÓN 18 — Neoplasias ─────────
     { num:112,titulo:"Quistes cutáneos",                                     seccion:18, presente:false },
     { num:113,titulo:"Tumores anexiales benignos",                           seccion:18, presente:false },
@@ -245,7 +244,21 @@ window.DERMAPREP_DATA = {
     "cap29_eritematoso":   { src:"images/fig_29_pemfigo_eritematoso.jpg",    caption:"Figura 29-9 — Pénfigo eritematoso: placas en nariz y área malar (solapamiento con LE)." },
     "cap30_penfigoide":    { src:"images/fig_30_penfigoide.jpg",             caption:"Capítulo 30 — Lesiones vegetantes y ampollosas en pliegues y palmas/plantas." },
     "cap44_parry_romberg": { src:"images/fig_44_parry_romberg.jpg",          caption:"Figura 44-7/8 — Síndrome de Parry-Romberg / morfea lineal." },
-    "cap44_morfea_lineal": { src:"images/fig_44_morfea_lineal.jpg",          caption:"Figura 44-8 — Morfea lineal de una extremidad: banda esclerótica con hiper/hipopigmentación." }
+    "cap44_morfea_lineal": { src:"images/fig_44_morfea_lineal.jpg",          caption:"Figura 44-8 — Morfea lineal de una extremidad: banda esclerótica con hiper/hipopigmentación." },
+
+    /* ──── VOL 2 ──── */
+    "cap62_mosaicismo":    { src:"images/fig_62_pigmentacion.jpg",           caption:"Figura del cap. 62 — Mosaicismo cutáneo: lesión hiperpigmentada con patrón segmentario; histología con melanocitos abundantes." },
+    "cap66_leucodermia":   { src:"images/fig_66_leucodermia_lineal.jpg",     caption:"Diagrama del cap. 66 — Diagnóstico diferencial de la leucodermia lineal." },
+    "cap67_demarcacion":   { src:"images/fig_67_lineas_demarcacion.jpg",     caption:"Figura del cap. 67 — Líneas de demarcación pigmentaria (grupos A-H)." },
+    "cap67_hiperpig":      { src:"images/fig_67_hiperpigmentacion.jpg",      caption:"Capítulo 67 — Hiperpigmentación postinflamatoria." },
+    "cap77_koh":           { src:"images/fig_77_hongos_koh.jpg",             caption:"Figura 77-5 — Preparaciones de hidróxido de potasio (KOH). A. Tiña versicolor: levaduras y formas miceliales cortas. B. Dermatofito (Trichophyton tonsurans). D. Levaduras y seudohifas de candidiasis." },
+    "cap80_herpes":        { src:"images/fig_80_lesiones_herpeticas.jpg",    caption:"Figura del cap. 80 — Lesiones herpéticas: erosiones agrupadas con costras hemáticas en zonas características." },
+    "cap87_hidroa":        { src:"images/fig_87_hidroa_vaccin.jpg",          caption:"Figura del cap. 87 — Hidroa vacciniforme: vesículas, costras y cicatrices varioliformes en zonas fotoexpuestas (cara)." },
+    "cap88_radioscopia":   { src:"images/fig_88_radioscopia.jpg",            caption:"Figura 88-5 — Dermatitis por radiación radioscópica: lesiones secundarias a procedimientos cardíacos repetidos." },
+    "cap89_mucosa":        { src:"images/fig_89_mucosa.jpg",                 caption:"Figura del cap. 89 — Hallazgos orales en patomimia (autolesión) o malos tratos." },
+    "cap90_inmersion":     { src:"images/fig_90_inmersion.jpg",              caption:"Figura 90-5 — Quemadura por inmersión en agua caliente. Obsérvense las líneas de demarcación, bien definidas y simétricas (signo de quemadura no accidental)." },
+    "cap98_queloides":     { src:"images/fig_98_queloides.jpg",              caption:"Figura 98-1 — Queloides. Localizaciones frecuentes: tronco superior y cuello. Se aprecia extensión a piel adyacente normal en patrón en garra." },
+    "cap104_clapo":        { src:"images/fig_104_clapo.jpg",                 caption:"Figura 104-11 — Síndrome CLAPO. A. Malformación capilar en labio inferior y mentón con malformación linfática cervical. B. Malformación linfática microquística en lengua." }
   },
 
   /* ════════════════════════════════════════════════════
@@ -657,7 +670,7 @@ window.DERMAPREP_DATA = {
       ], correcta:3,
       explicacion:"Esclerosis sistémica limitada (Raynaud + úlceras + reflujo). Ante isquemia crítica el vasodilatador es prioritario. El Ministerio dio por buena la opción 4." },
 
-    { id:"MIR25-25", capitulo:77, nivel:"medio", tipo:"opcion_multiple", fuente:"mir-2025",
+    { id:"MIR25-25", capitulo:79, nivel:"medio", tipo:"opcion_multiple", fuente:"mir-2025",
       enunciado:"[MIR 2025·25] Hombre de 36 años, prácticas sexuales de riesgo, lesiones cutáneas no pruriginosas 4 días. VIH negativo. Sífilis anti-treponema POSITIVA, RPR 1:32. Señale lo CORRECTO:",
       opciones:[
         "Análisis de líquido cefalorraquídeo",
@@ -677,12 +690,12 @@ window.DERMAPREP_DATA = {
       ], correcta:3,
       explicacion:"Anti-Sm son específicos del LES, NO del LE neonatal (que se asocia a anti-Ro y anti-La)." },
 
-    { id:"MIR25-46", capitulo:138, nivel:"medio", tipo:"opcion_multiple", fuente:"mir-2025",
+    { id:"MIR25-46", capitulo:87, nivel:"medio", tipo:"opcion_multiple", fuente:"mir-2025",
       enunciado:"[MIR 2025·46] Hombre de 79 años (HTA, hiperuricemia, artrosis). Tras excursión sin protección solar, eritema y edema bilateral de párpados. Tratamiento: hidroclorotiazida 25 mg, amlodipino 5 mg, atorvastatina 10 mg, apixaban 5 mg. ¿Cuál es el fármaco más probable causante de fotosensibilidad?",
       opciones:["Hidroclorotiazida","Amlodipino","Atorvastatina","Apixaban"], correcta:0,
       explicacion:"Las tiazidas son inductores conocidos de fotosensibilidad." },
 
-    { id:"MIR25-141", capitulo:67, nivel:"facil", tipo:"opcion_multiple", fuente:"mir-2025",
+    { id:"MIR25-141", capitulo:69, nivel:"facil", tipo:"opcion_multiple", fuente:"mir-2025",
       enunciado:"[MIR 2025·141] ¿A qué proteína de superficie se une pembrolizumab?",
       opciones:["PD-1","PD-L1","CTLA-4","HER2"], correcta:0,
       explicacion:"Pembrolizumab es inhibidor de PD-1 — inmunoterapia en melanoma metastásico y otros." },
@@ -702,7 +715,7 @@ window.DERMAPREP_DATA = {
       ], correcta:0,
       explicacion:"La profilaxis se recomienda con > 6 episodios/año, no con > 3." },
 
-    { id:"MIR25-161", capitulo:89, nivel:"medio", tipo:"opcion_multiple", fuente:"mir-2025",
+    { id:"MIR25-161", capitulo:78, nivel:"medio", tipo:"opcion_multiple", fuente:"mir-2025",
       enunciado:"[MIR 2025·161] Hombre 50 años: erupción generalizada en tronco, fiebre, escara abdominal («mancha negra»). Cazador reciente. Señale la afirmación CIERTA:",
       opciones:[
         "Es enfermedad de declaración obligatoria",
@@ -717,12 +730,12 @@ window.DERMAPREP_DATA = {
       opciones:["Dificultad para andar","Dificultad para subir escaleras","Dificultad para abrocharse los botones","Dolor muscular"], correcta:1,
       explicacion:"Afectación de musculatura proximal — dificultad para subir escaleras." },
 
-    { id:"MIR25-196", capitulo:74, nivel:"facil", tipo:"opcion_multiple", fuente:"mir-2025",
+    { id:"MIR25-196", capitulo:75, nivel:"facil", tipo:"opcion_multiple", fuente:"mir-2025",
       enunciado:"[MIR 2025·196] Niño 3 años, dermatitis atópica leve. Lesiones en cara/glúteos que pasaron de máculas a vesículas/erosiones con costras AMARILLENTAS, extensión rápida. Brote escolar. Sin fiebre. Diagnóstico:",
       opciones:["Impétigo contagioso","Molluscum contagiosum","Herpes virus","Candidiasis mucocutánea"], correcta:0,
       explicacion:"Costras amarillentas + brote escolar = impétigo." },
 
-    { id:"MIR25-197", capitulo:67, nivel:"dificil", tipo:"opcion_multiple", fuente:"mir-2025",
+    { id:"MIR25-197", capitulo:69, nivel:"dificil", tipo:"opcion_multiple", fuente:"mir-2025",
       enunciado:"[MIR 2025·197] Hombre 50 años: lesión pigmentada 8 mm en pierna, asimétrica, bordes irregulares, varios tonos, prurito ocasional. Madre con melanoma. Dermatoscopia: red irregular, puntos negros, regresión, vasos irregulares. Manejo:",
       opciones:[
         "Biopsia por punción de la parte más pigmentada",
@@ -732,7 +745,7 @@ window.DERMAPREP_DATA = {
       ], correcta:1,
       explicacion:"Sospecha de melanoma: biopsia escisional (NO parcial — alteraría el Breslow)." },
 
-    { id:"MIR25-198", capitulo:106, nivel:"medio", tipo:"opcion_multiple", fuente:"mir-2025",
+    { id:"MIR25-198", capitulo:103, nivel:"medio", tipo:"opcion_multiple", fuente:"mir-2025",
       enunciado:"[MIR 2025·198] Lactante 1 mes (prematura 32 sem) con 3 hemangiomas infantiles superficiales. Señale la INCORRECTA:",
       opciones:[
         "Tienen 3 fases: proliferativa, estabilidad, involutiva",
@@ -742,7 +755,7 @@ window.DERMAPREP_DATA = {
       ], correcta:2,
       explicacion:"Con solo 3 hemangiomas no se justifica imagen sistemática. Se hace con > 5 lesiones o si son segmentarios." },
 
-    { id:"MIR25-199", capitulo:133, nivel:"dificil", tipo:"opcion_multiple", fuente:"mir-2025",
+    { id:"MIR25-199", capitulo:8, nivel:"dificil", tipo:"opcion_multiple", fuente:"mir-2025",
       enunciado:"[MIR 2025·199] Hombre 45 años (HTA, dislipemia, hígado graso, esclerosis múltiple en fingolimod). Psoriasis BSA > 10%, PASI 14. Falló a acitretina 15 meses. Mejor opción:",
       opciones:[
         "Fototerapia",
@@ -808,7 +821,7 @@ window.DERMAPREP_DATA = {
       ], correcta:1,
       explicacion:"Porfiria variegata: déficit de protoporfirinógeno oxidasa (AD) — crisis neuroviscerales agudas + manifestaciones cutáneas tipo PCT." },
 
-    { id:"MIR26-21", capitulo:85, nivel:"facil", tipo:"opcion_multiple", fuente:"mir-2026",
+    { id:"MIR26-21", capitulo:77, nivel:"facil", tipo:"opcion_multiple", fuente:"mir-2026",
       enunciado:"[MIR 2026·21] Lactante 8 meses, eritema del pañal 2 semanas que no mejora con emolientes/cremas barrera. Tratamiento:",
       opciones:[
         "Corticoide tópico de potencia media",
@@ -818,7 +831,7 @@ window.DERMAPREP_DATA = {
       ], correcta:1,
       explicacion:"Sobreinfección por Candida (eritema intenso del fondo del pliegue + lesiones satélite) — antifúngico tópico." },
 
-    { id:"MIR26-133", capitulo:67, nivel:"dificil", tipo:"opcion_multiple", fuente:"mir-2026",
+    { id:"MIR26-133", capitulo:69, nivel:"dificil", tipo:"opcion_multiple", fuente:"mir-2026",
       enunciado:"[MIR 2026·133] Varón 63 años con miastenia gravis + melanoma estadio IV BRAF V600E positivo. Tratamiento más razonable:",
       opciones:["Pembrolizumab","Nivolumab","Dabrafenib + trametinib","Nivolumab + ipilimumab"], correcta:2,
       explicacion:"Enfermedad autoinmune previa (miastenia gravis): la inmunoterapia podría exacerbarla. Terapia dirigida BRAF+MEK es la opción." },
@@ -828,7 +841,7 @@ window.DERMAPREP_DATA = {
       opciones:["Sarcoidosis","Sífilis","Enfermedad de Behçet","Enfermedad de Crohn"], correcta:2,
       explicacion:"Tríada de Behçet: uveítis + úlceras orales + patergia." },
 
-    { id:"MIR26-179", capitulo:133, nivel:"dificil", tipo:"opcion_multiple", fuente:"mir-2026",
+    { id:"MIR26-179", capitulo:8, nivel:"dificil", tipo:"opcion_multiple", fuente:"mir-2026",
       enunciado:"[MIR 2026·179] Hombre 60 años (fumador 30 paq/año, ictus previo, AAS), artritis psoriásica que falló a MTX 25 mg/sem. ¿Cuál NO es la mejor opción de cambio?",
       opciones:[
         "Biológico anti-TNF",
@@ -836,7 +849,436 @@ window.DERMAPREP_DATA = {
         "Biológico anti-IL17",
         "Biológico anti-IL12/23"
       ], correcta:1,
-      explicacion:"En > 50 años con alta comorbilidad CV, los inhibidores de JAK aumentan riesgo de MACE y trombosis venosa." }
+      explicacion:"En > 50 años con alta comorbilidad CV, los inhibidores de JAK aumentan riesgo de MACE y trombosis venosa." },
+
+    /* ═══════════════════════════════════════════════════════
+     *   PREGUNTAS DEL VOLUMEN 2 (capítulos 56-110)
+     * ═══════════════════════════════════════════════════════ */
+
+    /* ─── CAP 62 — MOSAICISMO Y LESIONES LINEALES ─── */
+    { id:"BOL-C62-01", capitulo:62, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Según la tabla 62-3, las lesiones cutáneas en mosaico que afectan a melanoblastos siguen típicamente un patrón:",
+      opciones:[
+        "Dermatómico",
+        "Líneas de Blaschko, en bloque o filoide",
+        "Segmentario muscular",
+        "Difuso simétrico"
+      ], correcta:1,
+      explicacion:"Los melanoblastos migran como células únicas y producen pigmentación siguiendo líneas de Blaschko, en bloque o patrón filoide." },
+
+    { id:"BOL-C62-02", capitulo:62, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"El mosaicismo de tipo 2 ocurre cuando un individuo con una mutación heterocigótica de la línea germinal en un trastorno autosómico dominante desarrolla una mutación poscigótica en el otro alelo («segundo impacto»), causando una región con carga genética doble.",
+      respuesta:true,
+      explicacion:"Texto literal del cap. 62. Se ha demostrado a nivel molecular en Hailey-Hailey, Darier, PTEN hamartoma, NF1 y síndrome del nevo basocelular." },
+
+    { id:"BOL-C62-03", capitulo:62, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Mecanismo opuesto al «segundo impacto» que produce un área respetada (sin enfermedad) en un paciente con genodermatosis:",
+      opciones:[
+        "Pérdida de heterocigosidad",
+        "Mosaicismo revertido (mutación «de retorno»)",
+        "Recombinación somática primaria",
+        "Conversión génica letal"
+      ], correcta:1,
+      explicacion:"El mosaicismo revertido produce un área respetada por restauración del marco de lectura o segunda mutación que silencia el alelo mutante." },
+
+    /* ─── CAP 66 — TRASTORNOS DE HIPOPIGMENTACIÓN ─── */
+    { id:"BOL-C66-01", capitulo:66, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap66_leucodermia",
+      enunciado:"En el algoritmo de leucodermia lineal del cap. 66, un paciente presenta una banda hipopigmentada CON hallazgos sistémicos asociados. El diagnóstico más probable es:",
+      opciones:[
+        "Vitíligo segmentario",
+        "Trastorno de pigmentación segmentario",
+        "Hipomelanosis de Ito",
+        "Portador de Menkes"
+      ], correcta:2,
+      explicacion:"Algoritmo del cap. 66: hipopigmentación lineal nevoide CON hallazgos sistémicos positivos → hipomelanosis de Ito." },
+
+    { id:"BOL-C66-02", capitulo:66, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap66_leucodermia",
+      enunciado:"Niña con bandas lineales blancas en tórax y abdomen, con atrofia cribiforme, telangiectasias y grasa sustitutiva de la dermis a la biopsia. Diagnóstico:",
+      opciones:[
+        "Hipomelanosis de Ito",
+        "Síndrome de Goltz (hipoplasia dérmica focal)",
+        "Incontinencia pigmentaria",
+        "Liquen escleroso"
+      ], correcta:1,
+      explicacion:"Algoritmo de leucodermia lineal cap. 66: atrofia cribiforme + telangiectasias + grasa sustitutiva = síndrome de Goltz." },
+
+    /* ─── CAP 67 — TRASTORNOS DE HIPERPIGMENTACIÓN ─── */
+    { id:"BOL-C67-01", capitulo:67, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Trastorno asociado a hiperpigmentación postinflamatoria con predilección por la cara, especialmente frecuente en niños:",
+      opciones:["Acné vulgar","Impétigo","Picaduras de insectos","Liquen simple crónico"], correcta:1,
+      explicacion:"Tabla 67-1: el impétigo tiene predilección por la cara y es especialmente frecuente en niños." },
+
+    { id:"BOL-C67-02", capitulo:67, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Sobre el eritema discrómico persistente (EDP, dermatosis ceniciosa) según el cap. 67:",
+      opciones:[
+        "Es muy frecuente en personas de piel clara, casi inexistente en piel oscura",
+        "Las máculas grises-azuladas siguen las líneas de división de la piel (igual que la pitiriasis rosada)",
+        "Su evolución habitual es la regresión espontánea en 2-3 meses",
+        "Su tratamiento de elección son los corticoides tópicos potentes"
+      ], correcta:1,
+      explicacion:"Texto del cap. 67: «el eje longitudinal puede seguir las líneas de división de la piel (igual que la pitiriasis rosada); menos frecuente en personas de piel clara»." },
+
+    { id:"BOL-C67-03", capitulo:67, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"El eritema flagelado se asocia característicamente a:",
+      opciones:[
+        "Uso de bleomicina, ingestión de setas shiitake, dermatomiositis o enfermedad de Still",
+        "Infección por VEB",
+        "Exposición a tatuajes con cobalto",
+        "Crioterapia repetida"
+      ], correcta:0,
+      explicacion:"Tabla 67-1 (texto literal): el eritema flagelado se asocia al uso de bleomicina, ingestión de setas shiitake, dermatomiositis y enfermedad de Still." },
+
+    { id:"BOL-C67-04", capitulo:67, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap67_demarcacion",
+      enunciado:"Mujer joven consulta por cambios pigmentarios en la cara externa de los brazos con limitación neta a la cara antero-medial. Considerando las líneas de demarcación pigmentaria de la imagen, esta distribución corresponde al:",
+      opciones:[
+        "Grupo A (cara externa de brazos)",
+        "Grupo B (parte posterior de muslos)",
+        "Grupo C (banda esternal vertical)",
+        "Grupo D (banda paravertebral posterior)"
+      ], correcta:0,
+      explicacion:"Las líneas de Voigt-Futcher del Grupo A delimitan la pigmentación entre cara externa hiperpigmentada y antero-medial más clara del brazo." },
+
+    /* ─── CAP 69 — MELANOMA CUTÁNEO ─── */
+    { id:"BOL-C69-01", capitulo:69, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"En la regla ABCDE del melanoma, ¿qué representa la «E»?",
+      opciones:["Eritema perilesional","Evolución (cambios temporales)","Erosión central","Edad de aparición"], correcta:1,
+      explicacion:"Regla ABCDE: Asimetría, Bordes irregulares, Color heterogéneo, Diámetro > 6 mm, Evolución (cambios temporales)." },
+
+    { id:"BOL-C69-02", capitulo:69, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"El factor pronóstico aislado MÁS importante en el melanoma cutáneo primario localizado es:",
+      opciones:[
+        "Diámetro clínico de la lesión",
+        "Grosor de Breslow",
+        "Ulceración macroscópica",
+        "Localización anatómica"
+      ], correcta:1,
+      explicacion:"El grosor de Breslow es el factor pronóstico aislado más potente en melanoma cutáneo localizado." },
+
+    /* ─── CAP 71 — ALOPECIAS ─── */
+    { id:"BOL-C71-01", capitulo:71, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Hallazgo tricoscópico característico de la alopecia areata:",
+      opciones:[
+        "Pelos en signo de admiración (cabos cortos peládicos)",
+        "Pelos en sacacorchos",
+        "Pelos en coma",
+        "Pelos en zigzag"
+      ], correcta:0,
+      explicacion:"Los pelos en signo de admiración (peládicos) son característicos de la alopecia areata activa." },
+
+    { id:"BOL-C71-02", capitulo:71, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"La alopecia frontal fibrosante (AFF) es una variante clínica del liquen plano pilar, considerada una alopecia cicatricial linfocítica.",
+      respuesta:true,
+      explicacion:"La AFF se clasifica como variante del liquen plano pilar y es una alopecia cicatricial linfocítica del cuero cabelludo." },
+
+    /* ─── CAP 74 — MUCOSAS ─── */
+    { id:"BOL-C74-01", capitulo:74, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Las manchas de Fordyce son:",
+      opciones:[
+        "Pápulas blanco-amarillentas en mucosa oral o labial debidas a glándulas sebáceas ectópicas",
+        "Lesiones premalignas que requieren biopsia inmediata",
+        "Quistes mucosos de retención",
+        "Lesiones vasculares por VPH"
+      ], correcta:0,
+      explicacion:"Manchas de Fordyce: glándulas sebáceas ectópicas en mucosa oral/genital. Variante anatómica benigna." },
+
+    /* ─── CAP 76 — INFECCIONES MICOBACTERIANAS / LEPRA ─── */
+    { id:"BOL-C76-01", capitulo:76, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Según el cap. 76, ¿cuál es el período de incubación habitual de la lepra (Mycobacterium leprae)?",
+      opciones:["1-7 días","2-4 semanas","De unos meses a > 30 años","Siempre mayor de 50 años"], correcta:2,
+      explicacion:"Texto del cap. 76: «El período de incubación varía dentro de amplios márgenes, desde unos meses a > 30 días, aunque puede ser de 4-10 años»." },
+
+    { id:"BOL-C76-02", capitulo:76, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Sobre M. leprae (cap. 76):",
+      opciones:[
+        "Crece bien en medios de cultivo bacteriológicos estándar",
+        "Es un microorganismo intracelular obligado, no cultivado in vitro hasta la fecha",
+        "Requiere temperatura corporal central (37°C) para crecer",
+        "Se transmite principalmente por vectores artrópodos"
+      ], correcta:1,
+      explicacion:"Texto literal: M. leprae es intracelular obligado, no cultivable, con preferencia por temperaturas de ~35°C (zonas más frías: nariz, lóbulos, testículos)." },
+
+    { id:"BOL-C76-03", capitulo:76, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Sobre la transmisión y susceptibilidad a la lepra:",
+      opciones:[
+        "El riesgo de contagio domiciliario es < 1%",
+        "Personas con HLA-DR2 y HLA-DR3 tienden a forma TUBERCULOIDE; HLA-DQ1 a forma LEPROMATOSA",
+        "Personas con HLA-DR2 y HLA-DR3 tienden a forma LEPROMATOSA",
+        "No existe predisposición genética conocida"
+      ], correcta:1,
+      explicacion:"Texto del cap. 76: HLA-DR2 y HLA-DR3 → mayor probabilidad de forma tuberculoide; HLA-DQ1 → forma lepromatosa." },
+
+    /* ─── CAP 77 — ENFERMEDADES FÚNGICAS ─── */
+    { id:"BOL-C77-01", capitulo:77, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap77_koh",
+      enunciado:"Observe el examen directo con KOH (Fig. 77-5). El patrón mostrado en el panel A —grupos de levaduras y formas miceliales cortas en raspado de piel— es típico de:",
+      opciones:[
+        "Tiña (pitiriasis) versicolor",
+        "Dermatofitosis por T. rubrum",
+        "Candidiasis cutánea",
+        "Esporotricosis"
+      ], correcta:0,
+      explicacion:"Leyenda Fig. 77-5A: «raspados de piel superficial con tiña (pitiriasis) versicolor que muestran grupos de levaduras y formas miceliales cortas»." },
+
+    { id:"BOL-C77-02", capitulo:77, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Según el cap. 77 (tabla 77-5), ¿qué fármaco YA NO se recomienda como tratamiento sistémico de la pitiriasis versicolor por su riesgo de hepatotoxicidad grave, prolongación del QT e interacciones?",
+      opciones:["Fluconazol","Itraconazol","Ketoconazol oral","Terbinafina"], correcta:2,
+      explicacion:"Nota del cap. 77 (tabla 77-5): «El ketoconazol ya no está indicado para el tratamiento de las infecciones fúngicas superficiales por el riesgo de hepatotoxicidad grave, prolongación del segmento QT e interacciones farmacológicas importantes»." },
+
+    { id:"BOL-C77-03", capitulo:77, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Dosis oral de fluconazol recomendada para tratamiento inicial de la pitiriasis versicolor (cap. 77):",
+      opciones:["100 mg/día × 5 días","200 mg/día × 5-7 días","400 mg/día × 14 días","50 mg/día × 30 días"], correcta:1,
+      explicacion:"Tabla 77-5: fluconazol 200 mg/día oral × 5-7 días (o 300 mg/semana × 2-3 semanas, o 400 mg en monodosis)." },
+
+    /* ─── CAP 80 — VIRUS DEL HERPES HUMANOS ─── */
+    { id:"BOL-C80-01", capitulo:80, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"¿Cuál es el lugar de latencia del virus de la varicela-zóster (VVZ)?",
+      opciones:["Linfocitos B","Células epiteliales","Neuronas de ganglios sensitivos","Macrófagos"], correcta:2,
+      explicacion:"Tabla 80-1: VVZ (Alfaherpesvirinae) → infección lítica en células epiteliales; LATENTE en neuronas (ganglios sensitivos)." },
+
+    { id:"BOL-C80-02", capitulo:80, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"El virus del herpes humano 8 (VHH-8) se asocia clásicamente a:",
+      opciones:[
+        "Mononucleosis infecciosa",
+        "Sarcoma de Kaposi",
+        "Exantema súbito (roséola infantil)",
+        "Eritema infeccioso"
+      ], correcta:1,
+      explicacion:"Tabla 80-1: VHH-8 (Gammaherpesvirinae) — sarcoma de Kaposi, angiomatosis bacilar, equimosis, hemangioma, angiosarcoma." },
+
+    { id:"BOL-C80-03", capitulo:80, nivel:"medio", tipo:"asociacion", fuente:"bolognia",
+      enunciado:"Asocie cada virus del herpes humano con su asociación clínica clásica:",
+      pares:[
+        { item:"VHH-1 (VHS-1)",                           pareja:"Herpes orolabial" },
+        { item:"VHH-3 (VVZ)",                             pareja:"Varicela y herpes zóster" },
+        { item:"VHH-4 (VEB)",                             pareja:"Mononucleosis infecciosa; DRESS por reactivación" },
+        { item:"VHH-6",                                   pareja:"Exantema súbito / roséola infantil" },
+        { item:"VHH-8",                                   pareja:"Sarcoma de Kaposi" }
+      ],
+      explicacion:"Tabla 80-1 — Los ocho virus del herpes humanos con su clasificación y diagnósticos diferenciales." },
+
+    { id:"BOL-C80-04", capitulo:80, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia", imagen:"cap80_herpes",
+      enunciado:"En el herpes simple, los desencadenantes habituales de reactivación clínica incluyen: estrés emocional, luz ultravioleta, fiebre, menstruación, inmunodepresión, intervenciones quirúrgicas o dentales y otras lesiones tisulares locales.",
+      respuesta:true,
+      explicacion:"Texto literal del cap. 80: enumera estos desencadenantes habituales de reactivación del VHS." },
+
+    /* ─── CAP 81 — OTRAS INFECCIONES VÍRICAS (B19) ─── */
+    { id:"BOL-C81-01", capitulo:81, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Sobre el eritema infeccioso por parvovirus B19 (cap. 81), señale lo CORRECTO:",
+      opciones:[
+        "Predomina entre 4-10 años, con eritema macular intenso en mejillas («cara abofeteada») que respeta puente nasal y región peribucal",
+        "Es siempre asintomático y solo afecta a adultos",
+        "Produce vesículas confluentes en cara y tronco",
+        "Su patrón cutáneo característico es purpúrico petequial generalizado"
+      ], correcta:0,
+      explicacion:"Texto del cap. 81: eritema infeccioso predominante 4-10 años, eritema macular rojo intenso en mejillas con preservación del puente nasal y región peribucal; luego patrón reticulado en encaje en extremidades." },
+
+    { id:"BOL-C81-02", capitulo:81, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"El síndrome papulopurpúrico «en guantes y calcetines» (SPPGC) descrito en el cap. 81 se asocia clásicamente a infección aguda por:",
+      opciones:["Virus de Epstein-Barr","Citomegalovirus","Parvovirus B19","Adenovirus"], correcta:2,
+      explicacion:"Texto literal: SPPGC fue descrito por primera vez en 1990 y posteriormente se constató su asociación a infección aguda por B19 (aunque también se han descrito otras etiologías como Coxsackie B6, VHH-6 y VEB)." },
+
+    /* ─── CAP 87 — TRASTORNOS FOTODERMATOLÓGICOS ─── */
+    { id:"BOL-C87-01", capitulo:87, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Según la clasificación de fotodermatosis (tabla 87-1 del cap. 87), ¿cuál de las siguientes NO es una fotodermatosis idiopática posiblemente mediada inmunitariamente?",
+      opciones:[
+        "Erupción polimorfa lumínica",
+        "Prurigo actínico",
+        "Hidroa vacciniforme",
+        "Porfiria cutánea tarda"
+      ], correcta:3,
+      explicacion:"Tabla 87-2: las idiopáticas mediadas inmunitariamente incluyen EPL, prurigo actínico, hidroa vacciniforme, dermatitis actínica crónica y urticaria solar. La PCT pertenece a las endógenas (porfirias cutáneas)." },
+
+    { id:"BOL-C87-02", capitulo:87, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Paciente con erupción papulovesiculosa pruriginosa que aparece a las pocas horas de exposición al sol y dura varios días/semanas. Según el algoritmo del cap. 87:",
+      opciones:[
+        "Lupus eritematoso cutáneo",
+        "Erupción polimorfa lumínica (EPL)",
+        "Urticaria solar",
+        "Dermatitis actínica crónica"
+      ], correcta:1,
+      explicacion:"Figura 87-1 del cap. 87: pápulas/papulovesículas pruriginosas de aparición a las pocas horas, duración de días a semanas → EPL." },
+
+    { id:"BOL-C87-03", capitulo:87, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap87_hidroa",
+      enunciado:"Observe la imagen (Fig. del cap. 87). Niña con vesículas dolorosas y costras en cara que evolucionan a cicatrices varioliformes deprimidas, recidivantes con exposición solar desde la primera infancia. Diagnóstico:",
+      opciones:[
+        "Erupción polimorfa lumínica grave",
+        "Hidroa vacciniforme",
+        "Acné necrótico",
+        "Varicela atípica"
+      ], correcta:1,
+      explicacion:"Hidroa vacciniforme: fotodermatosis idiopática rara de la infancia con vesículas en zonas fotoexpuestas que dejan cicatrices varioliformes («en sacabocados»)." },
+
+    /* ─── CAP 88 — DERMOPATÍAS AMBIENTALES Y DEPORTIVAS ─── */
+    { id:"BOL-C88-01", capitulo:88, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Sobre la histología del eritema ab igne (cap. 88, fig. 88-4):",
+      opciones:[
+        "Necrosis fibrinoide vascular masiva con vasculitis leucocitoclástica",
+        "Vasos sanguíneos de la dermis superficial muy dilatados, hiperqueratosis, infiltrado inflamatorio escaso, epidermis más delgada con queratinocitos apoptósicos y células atípicas",
+        "Espongiosis con eosinófilos en epidermis",
+        "Granulomas no caseificantes en dermis profunda"
+      ], correcta:1,
+      explicacion:"Texto literal de la leyenda de fig. 88-4." },
+
+    { id:"BOL-C88-02", capitulo:88, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia", imagen:"cap88_radioscopia",
+      enunciado:"La dermatitis por radiación radioscópica (post-procedimientos cardiovasculares con fluoroscopia repetida) aparece típicamente en una localización característica: la parte superior izquierda de la espalda (sobre la arteria coronaria intervenida).",
+      respuesta:true,
+      explicacion:"Texto literal del cap. 88: «La parte superior izquierda de la espalda es una localización muy característica en pacientes sometidos a varios intentos de revascularización de la arteria coronaria»." },
+
+    { id:"BOL-C88-03", capitulo:88, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Factor de riesgo para quemaduras durante la resonancia magnética según la tabla 88-5:",
+      opciones:[
+        "Edad > 65 años",
+        "Diabetes mellitus",
+        "Tatuajes (con metales en pigmentos)",
+        "Hipertensión arterial"
+      ], correcta:2,
+      explicacion:"Tabla 88-5: derivaciones de ECG, cables de monitorización, piercings metálicos, TATUAJES, parches transdérmicos, prendas con costuras metálicas." },
+
+    /* ─── CAP 90 — SIGNOS CUTÁNEOS DE MALOS TRATOS ─── */
+    { id:"BOL-C90-01", capitulo:90, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap90_inmersion",
+      enunciado:"Quemadura en miembros inferiores con líneas de demarcación BIEN DEFINIDAS y SIMÉTRICAS en patrón de calcetín o guante. Esta presentación debe hacer sospechar:",
+      opciones:[
+        "Quemadura accidental por derrame",
+        "Quemadura no accidental por inmersión forzada",
+        "Quemadura química",
+        "Quemadura solar"
+      ], correcta:1,
+      explicacion:"Texto del cap. 90 (fig. 90-5): líneas de demarcación bien definidas y simétricas tras inmersión en agua caliente, signo de quemadura no accidental." },
+
+    { id:"BOL-C90-02", capitulo:90, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"En las quemaduras no accidentales en niños, el adulto responsable suele afirmar que no ha presenciado el incidente, y suele haber un retraso entre el momento de producirse la lesión y el de acudir al médico.",
+      respuesta:true,
+      explicacion:"Texto literal del cap. 90." },
+
+    { id:"BOL-C90-03", capitulo:90, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"El síndrome de Munchausen por poderes (cap. 90):",
+      opciones:[
+        "Es una variante de patomimia en adultos",
+        "Forma de maltrato infantil donde un progenitor induce o finge enfermedad en el niño para obtener beneficio psicológico; ~9% presenta manifestaciones cutáneas",
+        "Trastorno hereditario autosómico recesivo",
+        "Reacción cutánea idiopática a fármacos psiquiátricos"
+      ], correcta:1,
+      explicacion:"Texto del cap. 90: «El trastorno facticio impuesto a otro (Munchausen por poderes) es una forma poco frecuente de maltrato... aproximadamente el 9% de los casos presentan manifestaciones cutáneas»." },
+
+    /* ─── CAP 98 — HIPERTROFIAS DÉRMICAS (QUELOIDES) ─── */
+    { id:"BOL-C98-01", capitulo:98, nivel:"medio", tipo:"asociacion", fuente:"bolognia", imagen:"cap98_queloides",
+      enunciado:"Asocie cada característica con su tipo de cicatriz (tabla 98-1):",
+      pares:[
+        { item:"Confinada a la herida",                       pareja:"Cicatriz hipertrófica" },
+        { item:"Se extiende más allá de los límites de la herida (patrón en garra)",  pareja:"Queloide" },
+        { item:"Resolución espontánea posible y gradual",      pareja:"Cicatriz hipertrófica" },
+        { item:"Respuesta al tratamiento: mala",               pareja:"Queloide" }
+      ],
+      explicacion:"Tabla 98-1: las hipertróficas se confinan a la herida y pueden resolverse; los queloides se extienden, no resuelven y responden mal al tratamiento." },
+
+    { id:"BOL-C98-02", capitulo:98, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap98_queloides",
+      enunciado:"Localizaciones más frecuentes de los queloides (cap. 98):",
+      opciones:[
+        "Palmas y plantas",
+        "Tronco superior y cuello (también lóbulo de la oreja, región central del tórax)",
+        "Cuero cabelludo exclusivamente",
+        "Mucosas oral y genital"
+      ], correcta:1,
+      explicacion:"Texto del cap. 98 + leyenda Fig. 98-1: tronco superior, cuello, lóbulo de la oreja, región central del tórax." },
+
+    { id:"BOL-C98-03", capitulo:98, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"A diferencia de las cicatrices hipertróficas (que aparecen inmediatamente tras la lesión y suelen aplanarse en 1-2 años), los queloides tienen inicio retardado y pueden aparecer hasta los 28 años después de la herida, y suelen NO remitir con el tiempo.",
+      respuesta:true,
+      explicacion:"Tabla 98-1 + texto: inicio retardado, intervalo hasta 28 años, no remiten espontáneamente." },
+
+    /* ─── CAP 103 — HEMANGIOMAS INFANTILES ─── */
+    { id:"BOL-C103-01", capitulo:103, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Marcador inmunohistoquímico característico de los hemangiomas infantiles (HI) que los DIFERENCIA de las malformaciones vasculares (tabla 103-1):",
+      opciones:[
+        "CD31",
+        "GLUT-1 (positivo en HI, negativo en malformaciones)",
+        "S-100",
+        "CD34"
+      ], correcta:1,
+      explicacion:"Tabla 103-1: HI POSITIVO para GLUT-1, antígeno Lewis Y, merosina, FcγRII, WT1. Malformaciones vasculares NEGATIVAS para todos." },
+
+    { id:"BOL-C103-02", capitulo:103, nivel:"medio", tipo:"asociacion", fuente:"bolognia",
+      enunciado:"Asocie cada característica con hemangioma infantil (HI) o malformación vascular (MV):",
+      pares:[
+        { item:"Presente al nacimiento, expansión proporcional al crecimiento", pareja:"Malformación vascular" },
+        { item:"Generalmente ausente al nacimiento; proliferación rápida e involución espontánea",      pareja:"Hemangioma infantil" },
+        { item:"Más frecuente en niñas (2-5:1), prematuros y bajo peso al nacer", pareja:"Hemangioma infantil" },
+        { item:"Persiste sin involución en la edad adulta",                      pareja:"Malformación vascular" }
+      ],
+      explicacion:"Tabla 103-1: diferencias clínicas, epidemiológicas e histológicas entre HI y MV." },
+
+    { id:"BOL-C103-03", capitulo:103, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Tratamiento sistémico de primera línea en hemangiomas infantiles complicados según el cap. 103:",
+      opciones:["Corticoides orales","Propranolol oral","Vincristina","Interferón α"], correcta:1,
+      explicacion:"El propranolol oral es desde 2008 el tratamiento sistémico de primera línea en HI complicados (compromiso funcional, ulceración o riesgo de secuela estética)." },
+
+    /* ─── CAP 104 — MALFORMACIONES VASCULARES ─── */
+    { id:"BOL-C104-01", capitulo:104, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap104_clapo",
+      enunciado:"Paciente joven con malformación capilar en labio inferior + malformación linfática en lengua + sobrecrecimiento facial. Diagnóstico (Fig. 104-11):",
+      opciones:[
+        "Síndrome de Sturge-Weber",
+        "Síndrome CLAPO",
+        "Síndrome de Klippel-Trenaunay",
+        "Telangiectasia hemorrágica hereditaria"
+      ], correcta:1,
+      explicacion:"Fig. 104-11: síndrome CLAPO — Capillary malformation of the lower lip, Lymphatic malformation of the tongue, Asymmetry, Partial/generalized overgrowth." },
+
+    { id:"BOL-C104-02", capitulo:104, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"La telangiectasia hemorrágica hereditaria (enfermedad de Osler-Weber-Rendu) se hereda de forma:",
+      opciones:["Autosómica recesiva","Autosómica dominante","Recesiva ligada al X","Mitocondrial"], correcta:1,
+      explicacion:"Texto del cap. 104: «La THH es un trastorno autosómico dominante que se caracteriza por MAV viscerales y telangiectasias mucocutáneas». Mutaciones en ENG (THH1) o ACVRL1/ALK1 (THH2)." },
+
+    { id:"BOL-C104-03", capitulo:104, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"En la THH, las MAV viscerales asintomáticas que se recomienda cribar (especialmente en THH1 y mujeres) por riesgo de complicaciones potencialmente mortales son las:",
+      opciones:[
+        "Renales (hipertensión renovascular)",
+        "Pulmonares (hipoxemia, hemorragia, embolias cerebrales paradójicas)",
+        "Esplénicas (rotura)",
+        "Pancreáticas (pancreatitis hemorrágica)"
+      ], correcta:1,
+      explicacion:"Texto del cap. 104: «Las MAV pulmonares pueden provocar hipoxemia, hemorragia y abscesos cerebrales o accidentes cerebrovasculares causados por embolias paradójicas. Se recomienda la embolización transcatéter»." },
+
+    /* ─── CAP 107 — BIOLOGÍA TUMORAL (CBC/CE) ─── */
+    { id:"BOL-C107-01", capitulo:107, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"En el ciclo celular descrito en el cap. 107, el factor clave de la transición G₁→S es la fosforilación de:",
+      opciones:["p53","p21","Rb (proteína del retinoblastoma)","Myc"], correcta:2,
+      explicacion:"Texto del cap. 107: «El factor clave es el grado de fosforilación de Rb. Si Rb está insuficientemente fosforilada, se bloquea la proliferación y la célula se detiene en G₁»." },
+
+    { id:"BOL-C107-02", capitulo:107, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"El locus CDKN2A (INK4A) codifica DOS proteínas diferentes (p16 y p14ARF) gracias a:",
+      opciones:[
+        "Splicing alternativo simple",
+        "Marcos de lectura abiertos diferentes (ARNm con codón de inicio distinto)",
+        "Glicosilación diferencial postraduccional",
+        "Duplicación génica clásica"
+      ], correcta:1,
+      explicacion:"Texto literal: «CDKN2A tiene una característica extraordinaria al desplazar el codón del marco de lectura (de ahí el término marco de lectura alternativo [ARF]), y estos dos ARNm se regulan de forma independiente»." },
+
+    { id:"BOL-C107-03", capitulo:107, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Sobre la genética del melanoma familiar según el cap. 107:",
+      opciones:[
+        "Las mutaciones en CDK4 son comunes (>30% de casos)",
+        "Las mutaciones en CDKN2A explican algunos casos familiares; las mutaciones en CDK4 son inusuales y se han descrito solo unas pocas familias con melanoma familiar por mutaciones de CDK4",
+        "TP53 es el gen más frecuentemente mutado en melanoma familiar",
+        "Solo PTCH1 explica el melanoma familiar"
+      ], correcta:1,
+      explicacion:"Texto del cap. 107: «las mutaciones activadoras de las CDK son inusuales; por ejemplo, solo se han descrito unas pocas familias con melanoma familiar con mutaciones en CDK4»." },
+
+    /* ─── CAP 108 — CARCINOMA BASOCELULAR (CBC) ─── */
+    { id:"BOL-C108-01", capitulo:108, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"La vía de señalización característicamente activada en el carcinoma basocelular esporádico y en el síndrome del nevo basocelular (Gorlin) es:",
+      opciones:["Wnt/β-catenina","Hedgehog (PTCH1 / SMO)","Notch","BRAF/MAPK"], correcta:1,
+      explicacion:"La vía Hedgehog (mutaciones en PTCH1 o SMO) es la alteración fundamental en CBC y síndrome de Gorlin. Por ello vismodegib (inhibidor de SMO) es eficaz en CBC avanzado." },
+
+    /* ─── CAP 109 — CARCINOMA EPIDERMOIDE ─── */
+    { id:"BOL-C109-01", capitulo:109, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Localización del carcinoma epidermoide cutáneo con mayor riesgo de metástasis:",
+      opciones:[
+        "Antebrazo en zonas fotoexpuestas",
+        "Labio inferior y oreja",
+        "Tronco posterior",
+        "Cuero cabelludo en áreas pilosas"
+      ], correcta:1,
+      explicacion:"Las localizaciones de alto riesgo metastásico para CE incluyen labio (especialmente inferior), oreja y mucosas, además de los CE sobre cicatrices, úlceras crónicas o en inmunodeprimidos." }
 
   ]
 };
@@ -852,3 +1294,4 @@ window.DERMAPREP_DATA.estadisticas = (() => {
   });
   return s;
 })();
+
