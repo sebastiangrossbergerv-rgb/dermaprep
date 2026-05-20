@@ -1,6 +1,6 @@
 # DermaPrep · Examen de Dermatología
 
-Plataforma web de estudio y autoevaluación para dermatología. Genera exámenes personalizados a partir de un banco curado de preguntas basadas en **Dermatología de Bolognia, Schaffer y Cerroni** (Elsevier, 4.ª ed., 2019) y **preguntas oficiales del examen MIR** (España).
+Plataforma web de estudio y autoevaluación para dermatología, **enfocada al temario oficial de la especialidad**. Genera exámenes personalizados a partir de un banco curado de preguntas basadas en **Dermatología de Bolognia, Schaffer y Cerroni** (Elsevier, 4.ª ed., 2019), **preguntas oficiales del examen MIR** (España) y **DermNet New Zealand** (temas específicos como psoriasis pustulosa generalizada).
 
 ## ✨ Características
 
@@ -9,10 +9,16 @@ Plataforma web de estudio y autoevaluación para dermatología. Genera exámenes
   - **Práctica**: feedback y explicación inmediata después de cada pregunta
   - **Repaso rápido**: recorre el banco viendo pregunta + respuesta correcta + explicación
 
+- **Temario oficial integrado**
+  - 77 temas oficiales mapeados a capítulos del Bolognia
+  - Botón "Solo Temario" para filtrar solo capítulos del temario
+  - Indicador visual (•) en los capítulos del temario
+  - Por defecto, la app selecciona solo capítulos del temario para que el estudio esté enfocado
+
 - **Configuración personalizable**
   - Número de preguntas: 10 / 20 / 30 / 50 / todas / personalizado
   - Filtrado por capítulos y secciones
-  - Filtrado por fuente (Bolognia / MIR oficial)
+  - Filtrado por fuente: **Todas / Bolognia / MIR oficial / DermNet**
   - Distribución de dificultad ajustable (Fácil / Medio / Difícil) con presets
 
 - **Calificación detallada**
@@ -32,15 +38,14 @@ Plataforma web de estudio y autoevaluación para dermatología. Genera exámenes
 
 ## 📚 Contenido del banco
 
-- **Bolognia 4.ª ed.** — Capítulos 0–55 procesados (Vol. 1: Ciencia básica, Prurito, Papuloescamosas, Eritemas, Vesiculoampollosas, Anejos, Reumatológica, Metabólicas, Genodermatosis)
+- **Bolognia 4.ª ed.** — Capítulos 0–110 procesados (Vol. 1 y Vol. 2: Ciencia básica, Prurito, Papuloescamosas, Eritemas, Vesiculoampollosas, Anejos, Reumatológica, Metabólicas, Genodermatosis, Pigmentarios, Pelo/uñas/mucosas, Infecciones, Fotodermatosis, Linfomas, Vasculares, Tumores)
 - **MIR oficial** — Preguntas dermatológicas seleccionadas de MIR 2025 y MIR 2026, liberadas por el Ministerio de Sanidad
-
-Los capítulos del Vol. 2 (56–158) están declarados en el índice y listos para añadir preguntas cuando se procese el segundo volumen.
+- **DermNet New Zealand** — Preguntas adaptadas sobre psoriasis pustulosa generalizada (von Zumbusch) y otros temas específicos
 
 ## 🚀 Cómo desplegar en GitHub Pages
 
 1. **Crea un repositorio nuevo** en tu cuenta de GitHub (por ejemplo `dermaprep`).
-2. **Sube los archivos** de esta carpeta a la raíz del repo (puedes arrastrarlos en la web de GitHub).
+2. **Sube los archivos** de esta carpeta a la raíz del repo.
 3. **Activa GitHub Pages**:
    - Ve a `Settings` → `Pages` (menú lateral)
    - En "Source" selecciona `Deploy from a branch`
@@ -54,11 +59,8 @@ Los capítulos del Vol. 2 (56–158) están declarados en el índice y listos pa
 dermaprep/
 ├── index.html      ← Página principal (estructura + estilos)
 ├── app.js          ← Lógica de la aplicación
-├── data.js         ← Banco de preguntas y datos
+├── data.js         ← Banco de preguntas, capítulos, imágenes y temario
 ├── images/         ← Figuras clínicas del libro
-│   ├── fig_8_psoriasis_placas.jpg
-│   ├── fig_29_pemfigo_foliaceo.jpg
-│   └── ...
 └── README.md       ← Este archivo
 ```
 
@@ -72,7 +74,7 @@ Las preguntas se añaden al array `preguntas` de `data.js`. Estructura mínima:
   capitulo: 8,                // número de capítulo
   nivel: "medio",             // "facil" | "medio" | "dificil"
   tipo: "opcion_multiple",    // ver tipos disponibles abajo
-  fuente: "bolognia",         // "bolognia" | "mir-2024" | "mir-2025" | "mir-2026"
+  fuente: "bolognia",         // "bolognia" | "mir-2024" | "mir-2025" | "mir-2026" | "dermnet"
   enunciado: "Pregunta…",
   opciones: ["A", "B", "C", "D"],
   correcta: 1,                // índice (0-3) de la respuesta correcta
@@ -93,6 +95,7 @@ Las preguntas se añaden al array `preguntas` de `data.js`. Estructura mínima:
 - Los contenidos extraídos del libro de Bolognia son citas breves de uso educativo (≤15 palabras por extracto), con fines docentes.
 - Las preguntas del MIR son **dominio público** una vez liberadas oficialmente por el Ministerio de Sanidad de España.
 - Los comentarios sobre preguntas MIR están adaptados del proyecto colaborativo **MIR 2.0** (Dermapixel · Casimédicos, CC BY-NC-ND).
+- Las preguntas basadas en **DermNet New Zealand** son adaptaciones educativas con atribución correspondiente (dermnetnz.org). Las imágenes propietarias de DermNet **no** se reproducen en este sitio.
 - Esta es una **herramienta educativa sin ánimo de lucro** dirigida a residentes y especialistas en formación.
 
 ## 🛠️ Tecnologías
