@@ -72,6 +72,107 @@ header.masthead{
 .h-stat .n{font-family:'Fraunces',serif;font-size:28px;font-weight:600;line-height:1;color:var(--accent)}
 .h-stat .l{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:3px}
 
+.h-progress-btn{
+  padding:10px 16px;background:var(--ink);color:var(--paper);border:0;
+  font-family:'Inter',sans-serif;font-weight:600;font-size:12px;letter-spacing:.08em;
+  cursor:pointer;border-radius:0;transition:background .15s;
+  display:flex;align-items:center;gap:6px;margin-left:8px
+}
+.h-progress-btn:hover{background:var(--accent)}
+.h-progress-btn span{font-size:14px}
+
+/* ═════ PROGRESS VIEW ═════ */
+.progress-view{max-width:1100px;margin:0 auto;padding:32px 32px 80px}
+@media(max-width:600px){.progress-view{padding:24px 18px 60px}}
+
+.progress-hero{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:24px;padding-bottom:18px;border-bottom:2px solid var(--ink)}
+.progress-hero h2{font-family:'Fraunces',serif;font-size:28px;font-weight:600;letter-spacing:-.01em}
+.progress-hero p{font-size:13px;color:var(--muted);margin-top:4px}
+.progress-hero .actions{display:flex;gap:8px;flex-wrap:wrap}
+.progress-hero .actions button{
+  padding:9px 16px;font-family:'Inter',sans-serif;font-weight:600;font-size:11.5px;
+  letter-spacing:.08em;border-radius:0;cursor:pointer;border:1px solid var(--ink);
+  background:transparent;color:var(--ink);transition:all .15s
+}
+.progress-hero .actions button:hover{background:var(--ink);color:var(--paper)}
+.progress-hero .actions button.danger:hover{background:var(--accent);border-color:var(--accent)}
+
+.prog-stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:28px}
+.prog-stat-card{
+  background:#fff;border:1px solid var(--ink);padding:18px 16px;text-align:center;
+  position:relative
+}
+.prog-stat-card b{font-family:'Fraunces',serif;font-size:32px;font-weight:600;color:var(--ink);display:block;line-height:1}
+.prog-stat-card .lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:6px}
+.prog-stat-card.accent b{color:var(--accent)}
+.prog-stat-card.good b{color:var(--green)}
+.prog-stat-card.bad b{color:var(--accent)}
+
+.prog-section{margin-bottom:32px}
+.prog-section h3{
+  font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:12px;
+  padding-bottom:8px;border-bottom:1px solid var(--ink);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.prog-section h3 .info{font-size:11px;font-family:'Inter',sans-serif;font-weight:400;color:var(--muted);font-style:italic}
+
+.topic-list{display:grid;gap:6px}
+.topic-card{
+  display:grid;grid-template-columns:1fr auto auto auto;gap:14px;align-items:center;
+  padding:11px 16px;background:#fff;border:1px solid rgba(0,0,0,.15);
+  transition:all .15s
+}
+.topic-card:hover{border-color:var(--ink)}
+.topic-card .topic-info{min-width:0}
+.topic-card .topic-info b{display:block;font-size:13.5px;font-weight:600;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.topic-card .topic-info span{font-size:11px;color:var(--muted)}
+.topic-card .topic-stats{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);font-weight:500;min-width:60px;text-align:right}
+.topic-card .topic-pct-bar{width:80px;height:6px;background:#eee;border:1px solid var(--ink);overflow:hidden}
+.topic-card .topic-pct-bar div{height:100%;transition:width .3s}
+.topic-card .topic-pct-bar.good div{background:var(--green)}
+.topic-card .topic-pct-bar.warn div{background:var(--amber)}
+.topic-card .topic-pct-bar.bad div{background:var(--accent)}
+.topic-card .topic-pct-text{font-family:'Fraunces',serif;font-size:18px;font-weight:600;min-width:48px;text-align:right}
+.topic-card .topic-pct-text.good{color:var(--green)}
+.topic-card .topic-pct-text.warn{color:var(--amber)}
+.topic-card .topic-pct-text.bad{color:var(--accent)}
+.topic-card .study-btn{
+  padding:6px 10px;font-size:10px;font-weight:600;letter-spacing:.08em;
+  background:transparent;border:1px solid var(--accent);color:var(--accent);
+  cursor:pointer;border-radius:0;font-family:'Inter',sans-serif;transition:all .15s
+}
+.topic-card .study-btn:hover{background:var(--accent);color:#fff}
+
+.empty-state{padding:30px;text-align:center;color:var(--muted);font-style:italic;font-size:13px;background:var(--paper-warm);border:1px dashed rgba(0,0,0,.15)}
+
+/* History exam list */
+.history-list{display:grid;gap:6px}
+.history-row{
+  display:grid;grid-template-columns:auto 1fr auto auto;gap:14px;align-items:center;
+  padding:10px 16px;background:#fff;border:1px solid rgba(0,0,0,.12);font-size:13px
+}
+.history-row .date{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);min-width:90px}
+.history-row .mode-tag{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:2px 7px;border:1px solid var(--muted);color:var(--muted)}
+.history-row .pct{font-family:'Fraunces',serif;font-weight:600;font-size:18px;min-width:50px;text-align:right}
+.history-row .pct.good{color:var(--green)}
+.history-row .pct.bad{color:var(--accent)}
+.history-row .det{font-size:11px;color:var(--muted)}
+
+/* Big action button at bottom */
+.prog-quick-action{
+  background:var(--ink);color:var(--paper);padding:22px 28px;
+  margin-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px
+}
+.prog-quick-action .text h4{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:3px}
+.prog-quick-action .text p{font-size:12px;opacity:.75}
+.prog-quick-action button{
+  padding:12px 22px;background:var(--accent);color:#fff;border:0;
+  font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;cursor:pointer;border-radius:0;transition:background .15s
+}
+.prog-quick-action button:hover{background:var(--accent-deep)}
+.prog-quick-action button:disabled{background:var(--muted);cursor:not-allowed}
+
 /* ═════════ HOME / CONFIGURATOR ═════════ */
 .home{max-width:1100px;margin:0 auto;padding:32px 32px 80px}
 @media(max-width:600px){.home{padding:24px 18px 60px}}
@@ -293,6 +394,12 @@ header.masthead{
 .tag-nivel.dificil{color:var(--accent-deep);border-color:var(--accent-deep);background:rgba(160,40,40,.06)}
 .tag-src{color:var(--muted);border-color:var(--muted);background:transparent}
 .tag-src.mir{color:var(--blue);border-color:var(--blue);background:rgba(47,79,114,.05)}
+.tag-src.dermnet{color:#3d6041;border-color:#3d6041;background:rgba(61,96,65,.05)}
+.temario-dot{
+  display:inline-block;color:var(--accent);font-size:9px;line-height:1;
+  margin-right:5px;vertical-align:middle;
+  text-shadow:0 0 0 var(--accent)
+}
 
 /* Image */
 .q-img{margin:0 -28px 18px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);background:#1a1410}
@@ -481,6 +588,9 @@ footer.foot a:hover{text-decoration:underline}
       <div class="h-stat"><div class="n" id="hStatQ">—</div><div class="l">Preguntas</div></div>
       <div class="h-stat"><div class="n" id="hStatCh">—</div><div class="l">Capítulos</div></div>
       <div class="h-stat"><div class="n" id="hStatImg">—</div><div class="l">Figuras</div></div>
+      <button class="h-progress-btn" id="openProgressBtn" title="Ver mi progreso de estudio">
+        <span>📊</span> Mi progreso
+      </button>
     </div>
   </div>
 </header>
@@ -542,6 +652,7 @@ footer.foot a:hover{text-decoration:underline}
           <button class="src-pill on" data-src="all">Todas</button>
           <button class="src-pill" data-src="bolognia">Bolognia</button>
           <button class="src-pill" data-src="mir">MIR oficial</button>
+          <button class="src-pill" data-src="dermnet">DermNet</button>
         </div>
       </div>
 
@@ -582,8 +693,8 @@ footer.foot a:hover{text-decoration:underline}
         <div class="qbtns">
           <button data-action="all">Todos</button>
           <button data-action="none">Ninguno</button>
+          <button data-action="temario-only" title="Solo capítulos del temario oficial">Solo Temario</button>
           <button data-action="mir-only">Solo MIR</button>
-          <button data-action="invert">Invertir</button>
         </div>
         <div class="chapter-tree" id="chapterTree"></div>
       </div>
@@ -637,9 +748,65 @@ footer.foot a:hover{text-decoration:underline}
 <!-- ════════════════ SUMMARY VIEW ════════════════ -->
 <section class="exam-view hidden" id="viewSummary"></section>
 
+<!-- ════════════════ PROGRESS VIEW ════════════════ -->
+<section class="progress-view hidden" id="viewProgress">
+
+  <div class="progress-hero">
+    <div>
+      <h2 class="serif">Mi progreso</h2>
+      <p>Tu historial de estudio guardado localmente en este navegador</p>
+    </div>
+    <div class="actions">
+      <button id="backFromProgressBtn">← Volver</button>
+      <button id="exportProgressBtn" title="Descargar tu progreso como archivo JSON">📤 Exportar</button>
+      <button id="importProgressBtn" title="Cargar progreso desde un archivo JSON">📥 Importar</button>
+      <input type="file" id="importFileInput" accept=".json" style="display:none">
+      <button id="resetProgressBtn" class="danger" title="Borrar todo el historial">🗑 Borrar</button>
+    </div>
+  </div>
+
+  <!-- Top stats grid -->
+  <div class="prog-stats-grid" id="progStatsGrid"></div>
+
+  <!-- Topics to review -->
+  <div class="prog-section">
+    <h3>📚 Temas para repasar <span class="info">aciertos &lt; 60% — prioriza estos</span></h3>
+    <div class="topic-list" id="topicsBad"></div>
+  </div>
+
+  <!-- Topics in progress -->
+  <div class="prog-section">
+    <h3>⏳ Temas en progreso <span class="info">aciertos 60-80%</span></h3>
+    <div class="topic-list" id="topicsWarn"></div>
+  </div>
+
+  <!-- Topics mastered -->
+  <div class="prog-section">
+    <h3>✅ Temas dominados <span class="info">aciertos &gt; 80% — ¡bien hecho!</span></h3>
+    <div class="topic-list" id="topicsGood"></div>
+  </div>
+
+  <!-- Quick action -->
+  <div class="prog-quick-action" id="quickAction">
+    <div class="text">
+      <h4 class="serif">Examen de repaso</h4>
+      <p>Genera un examen solo con preguntas que has fallado o que aún no has visto</p>
+    </div>
+    <button id="reviewExamBtn">Crear examen de repaso</button>
+  </div>
+
+  <!-- Exam history -->
+  <div class="prog-section" style="margin-top:32px">
+    <h3>📅 Últimos exámenes <span class="info" id="histCountInfo">—</span></h3>
+    <div class="history-list" id="historyList"></div>
+  </div>
+
+</section>
+
 <footer class="foot">
   <p><strong>DermaPrep</strong> · Banco basado en <em>Dermatología</em> de Bolognia, Schaffer y Cerroni (Elsevier, 4.ª ed., 2019) y preguntas oficiales del examen MIR liberadas por el Ministerio de Sanidad de España.</p>
   <p style="margin-top:6px">Herramienta educativa sin ánimo de lucro · Las preguntas MIR son de dominio público · Comentarios MIR adaptados del proyecto colaborativo MIR 2.0 (Dermapixel · Casimédicos, CC BY-NC-ND)</p>
+  <p style="margin-top:6px">Algunas imágenes clínicas © <a href="https://dermnetnz.org/" target="_blank" rel="noopener">DermNet New Zealand</a>, usadas con marca de agua y atribución bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>. Las imágenes del Bolognia se utilizan con fines educativos como citas breves.</p>
 </footer>
 
 <div class="toast" id="toast"></div>
