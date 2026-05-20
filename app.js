@@ -18,7 +18,13 @@ const D = window.DERMAPREP_DATA;
 const state = {
   mode: 'exam',                                              // exam | practice | review
   source: 'all',                                             // all | bolognia | mir
-  selectedChapters: new Set(D.capitulos.filter(c => c.presente).map(c => c.num)),
+  // Default selection: chapters present in the official temario AND that have questions available
+  selectedChapters: (() => {
+    const temarioCaps = new Set();
+    (D.temario || []).forEach(t => (t.capitulos || []).forEach(c => temarioCaps.add(c)));
+    const presentCaps = D.capitulos.filter(c => c.presente).map(c => c.num);
+    return new Set(presentCaps.filter(n => temarioCaps.has(n)));
+  })(),
   difficulty: { facil:40, medio:35, dificil:25 },
   totalQ: 20,
   exam: null,                                                // {questions, answers, graded, startTime}
@@ -73,6 +79,7 @@ function renderSummaryRow(){
     <div class="summary-cell"><div class="n" style="color:var(--accent)">${e.dificil}</div><div class="l">Difíciles</div></div>
     <div class="summary-cell"><div class="n">${(e.porFuente['bolognia']||0)}</div><div class="l">Bolognia</div></div>
     <div class="summary-cell"><div class="n">${(e.porFuente['mir-2025']||0)+(e.porFuente['mir-2026']||0)+(e.porFuente['mir-2024']||0)}</div><div class="l">MIR oficial</div></div>
+    <div class="summary-cell"><div class="n">${(e.porFuente['dermnet']||0)}</div><div class="l">DermNet</div></div>
   `;
 }
 
@@ -91,6 +98,10 @@ function bindModes(){
 function buildChapterTree(){
   const root = $('#chapterTree');
   root.innerHTML = '';
+  // Set of chapters present in the official temario
+  const temarioChaptersSet = new Set();
+  (D.temario || []).forEach(t => (t.capitulos || []).forEach(c => temarioChaptersSet.add(c)));
+
   D.secciones.forEach(sec => {
     const caps = D.capitulos.filter(c => c.seccion === sec.id);
     if (!caps.length) return;
@@ -112,13 +123,15 @@ function buildChapterTree(){
       const qcount = D.estadisticas.porCapitulo[c.num] || 0;
       const id = `cap-${c.num}`;
       const disabled = !c.presente;
+      const inTemario = temarioChaptersSet.has(c.num);
       const row = document.createElement('div');
       row.className = 'cap-item';
       row.innerHTML = `
         <input type="checkbox" id="${id}" data-cap="${c.num}"
                ${state.selectedChapters.has(c.num)?'checked':''}
                ${disabled?'disabled':''}>
-        <label for="${id}" class="${disabled?'disabled':''}">
+        <label for="${id}" class="${disabled?'disabled':''}" title="${inTemario?'En el temario oficial':''}">
+          ${inTemario?'<span class="temario-dot" title="En el temario oficial">●</span>':''}
           <span class="num">${String(c.num).padStart(2,'0')}</span>${c.titulo}
           ${qcount?`<span class="qcount">+${qcount}</span>`:''}
         </label>
@@ -150,6 +163,7 @@ function countAvailableQuestions(){
     if (!state.selectedChapters.has(q.capitulo)) return false;
     if (state.source === 'bolognia' && q.fuente !== 'bolognia') return false;
     if (state.source === 'mir' && !q.fuente.startsWith('mir-')) return false;
+    if (state.source === 'dermnet' && q.fuente !== 'dermnet') return false;
     return true;
   }).length;
 }
@@ -178,6 +192,15 @@ function bindChapterQuickButtons(){
           cb.checked = mirCaps.has(cap);
           if (cb.checked) state.selectedChapters.add(cap); else state.selectedChapters.delete(cap);
         });
+      } else if (action === 'temario-only') {
+        // Only select chapters that are explicitly in the official temario
+        const temarioCaps = new Set();
+        (D.temario || []).forEach(t => (t.capitulos || []).forEach(c => temarioCaps.add(c)));
+        checks.forEach(cb => {
+          const cap = parseInt(cb.dataset.cap);
+          cb.checked = temarioCaps.has(cap);
+          if (cb.checked) state.selectedChapters.add(cap); else state.selectedChapters.delete(cap);
+        });
       }
       updateAll();
     });
@@ -191,7 +214,7 @@ function bindSourceFilter(){
       $$('.src-pill').forEach(b => b.classList.remove('on'));
       btn.classList.add('on');
       state.source = btn.dataset.src;
-      const labels = { all:'Todas las fuentes', bolognia:'Solo Bolognia', mir:'Solo MIR oficial' };
+      const labels = { all:'Todas las fuentes', bolognia:'Solo Bolognia', mir:'Solo MIR oficial', dermnet:'Solo DermNet' };
       $('#srcLabel').textContent = labels[state.source];
       updateAll();
     });
@@ -303,6 +326,7 @@ function generateExam(){
     if (!state.selectedChapters.has(q.capitulo)) return false;
     if (state.source === 'bolognia' && q.fuente !== 'bolognia') return false;
     if (state.source === 'mir' && !q.fuente.startsWith('mir-')) return false;
+    if (state.source === 'dermnet' && q.fuente !== 'dermnet') return false;
     return true;
   });
 
@@ -396,7 +420,9 @@ function renderQuestion(q, idx){
   const cap = D.capitulos.find(c => c.num === q.capitulo);
   const nivelLbl = { facil:'Fácil', medio:'Medio', dificil:'Difícil' }[q.nivel];
   const isMir = q.fuente.startsWith('mir-');
-  const srcLbl = isMir ? `MIR ${q.fuente.slice(4)}` : 'Bolognia';
+  const isDermnet = q.fuente === 'dermnet';
+  const srcLbl = isMir ? `MIR ${q.fuente.slice(4)}` : isDermnet ? 'DermNet' : 'Bolognia';
+  const srcCls = isMir ? 'mir' : isDermnet ? 'dermnet' : '';
 
   const imgHTML = q.imagen && D.imagenes[q.imagen] ?
     `<div class="q-img"><img src="${D.imagenes[q.imagen].src}" alt="Figura clínica" loading="lazy"><div class="cap">${D.imagenes[q.imagen].caption}</div></div>` : '';
@@ -445,7 +471,7 @@ function renderQuestion(q, idx){
           </div>
         </div>
         <div class="q-tags">
-          <span class="tag-src ${isMir?'mir':''}">${srcLbl}</span>
+          <span class="tag-src ${srcCls}">${srcLbl}</span>
           <span class="tag-nivel ${q.nivel}">${nivelLbl}</span>
         </div>
       </div>
@@ -726,6 +752,216 @@ function showSummary(correct, total, byNivel, byCap, timeSec, wrongQuestions){
   window.scrollTo({top:0});
 }
 
+/* ═════════════════ PROGRESS VIEW ═════════════════ */
+function openProgress(){
+  $('#viewHome').classList.add('hidden');
+  $('#viewExam').classList.add('hidden');
+  $('#viewSummary').classList.add('hidden');
+  $('#viewProgress').classList.remove('hidden');
+  renderProgress();
+  window.scrollTo({top:0});
+}
+
+function closeProgress(){
+  $('#viewProgress').classList.add('hidden');
+  $('#viewHome').classList.remove('hidden');
+  renderHistory();
+  window.scrollTo({top:0});
+}
+
+function renderProgress(){
+  const d = history.load();
+  const answers = d.answers || {};
+  const exams = d.exams || [];
+
+  // ───── Top stats ─────
+  const totalAnswered = Object.values(answers).reduce((a,v) => a+v.ok+v.fail, 0);
+  const totalCorrect = Object.values(answers).reduce((a,v) => a+v.ok, 0);
+  const pctGlobal = totalAnswered ? Math.round(totalCorrect/totalAnswered*100) : 0;
+  const uniqQuestionsSeen = Object.keys(answers).length;
+  const totalBank = D.preguntas.length;
+  const covPct = Math.round(uniqQuestionsSeen/totalBank*100);
+  const avgExam = exams.length ? Math.round(exams.reduce((a,e) => a+e.pct, 0) / exams.length) : 0;
+  const bestExam = exams.length ? Math.max(...exams.map(e => e.pct)) : 0;
+  // Study days (unique dates)
+  const days = new Set(exams.map(e => new Date(e.date).toDateString())).size;
+
+  $('#progStatsGrid').innerHTML = `
+    <div class="prog-stat-card accent"><b>${exams.length}</b><span class="lbl">Exámenes</span></div>
+    <div class="prog-stat-card"><b>${totalAnswered}</b><span class="lbl">Respuestas</span></div>
+    <div class="prog-stat-card ${pctGlobal>=70?'good':pctGlobal<50?'bad':''}"><b>${pctGlobal}%</b><span class="lbl">Acierto global</span></div>
+    <div class="prog-stat-card good"><b>${avgExam}%</b><span class="lbl">Promedio exámenes</span></div>
+    <div class="prog-stat-card good"><b>${bestExam}%</b><span class="lbl">Mejor exam</span></div>
+    <div class="prog-stat-card"><b>${days}</b><span class="lbl">Días estudio</span></div>
+    <div class="prog-stat-card"><b>${uniqQuestionsSeen}/${totalBank}</b><span class="lbl">Cobertura (${covPct}%)</span></div>
+  `;
+
+  // ───── Build per-chapter stats ─────
+  // Aggregate ok/fail per chapter from all answers
+  const perChapter = {};
+  D.preguntas.forEach(q => {
+    const stats = answers[q.id];
+    if (!stats) return;
+    if (!perChapter[q.capitulo]) {
+      const cap = D.capitulos.find(c => c.num === q.capitulo);
+      perChapter[q.capitulo] = {
+        num: q.capitulo,
+        titulo: cap ? cap.titulo : `Cap. ${q.capitulo}`,
+        ok: 0, fail: 0, total: 0
+      };
+    }
+    perChapter[q.capitulo].ok += stats.ok;
+    perChapter[q.capitulo].fail += stats.fail;
+    perChapter[q.capitulo].total += stats.ok + stats.fail;
+  });
+
+  const chapterStats = Object.values(perChapter)
+    .filter(c => c.total > 0)
+    .map(c => ({
+      ...c,
+      pct: Math.round(c.ok / c.total * 100)
+    }));
+
+  // Sort and split
+  const topicsBad = chapterStats.filter(c => c.pct < 60).sort((a,b) => a.pct - b.pct);
+  const topicsWarn = chapterStats.filter(c => c.pct >= 60 && c.pct < 80).sort((a,b) => a.pct - b.pct);
+  const topicsGood = chapterStats.filter(c => c.pct >= 80).sort((a,b) => b.pct - a.pct);
+
+  renderTopicList('#topicsBad', topicsBad, 'bad', 'Aún no has respondido lo suficiente para detectar temas a repasar. Haz algunos exámenes primero.');
+  renderTopicList('#topicsWarn', topicsWarn, 'warn', '¡No tienes temas en progreso!');
+  renderTopicList('#topicsGood', topicsGood, 'good', 'Sigue practicando para dominar más temas.');
+
+  // ───── History list ─────
+  $('#histCountInfo').textContent = `${exams.length} totales`;
+  if (exams.length === 0) {
+    $('#historyList').innerHTML = '<div class="empty-state">Aún no has completado ningún examen.</div>';
+  } else {
+    $('#historyList').innerHTML = [...exams].reverse().slice(0, 20).map(e => {
+      const dt = new Date(e.date);
+      const dateStr = `${dt.getDate()}/${dt.getMonth()+1}/${String(dt.getFullYear()).slice(2)} ${String(dt.getHours()).padStart(2,'0')}:${String(dt.getMinutes()).padStart(2,'0')}`;
+      const modeLbl = { exam:'Examen', practice:'Práctica', review:'Repaso' }[e.mode] || 'Examen';
+      const pctCls = e.pct >= 65 ? 'good' : e.pct < 50 ? 'bad' : '';
+      return `<div class="history-row">
+        <div class="date">${dateStr}</div>
+        <div class="det"><span class="mode-tag">${modeLbl}</span> &nbsp; ${e.score}/${e.total} preguntas · ${fmtTime(e.timeSec||0)}</div>
+        <div></div>
+        <div class="pct ${pctCls}">${e.pct}%</div>
+      </div>`;
+    }).join('');
+  }
+
+  // ───── Quick action button state ─────
+  const wrongCount = Object.values(answers).filter(v => v.fail > 0).length;
+  const unseen = D.preguntas.length - Object.keys(answers).length;
+  const btn = $('#reviewExamBtn');
+  btn.disabled = wrongCount === 0 && unseen === 0;
+  $('#quickAction .text p').textContent = `${wrongCount} preguntas falladas + ${unseen} sin responder disponibles`;
+}
+
+function renderTopicList(selector, topics, cls, emptyMsg){
+  if (topics.length === 0) {
+    $(selector).innerHTML = `<div class="empty-state">${emptyMsg}</div>`;
+    return;
+  }
+  $(selector).innerHTML = topics.map(t => `
+    <div class="topic-card">
+      <div class="topic-info">
+        <b>Cap. ${t.num} · ${t.titulo}</b>
+        <span>${t.ok} aciertos / ${t.fail} fallos</span>
+      </div>
+      <div class="topic-stats">${t.ok}/${t.total}</div>
+      <div class="topic-pct-bar ${cls}"><div style="width:${t.pct}%"></div></div>
+      <div class="topic-pct-text ${cls}">${t.pct}%</div>
+      <button class="study-btn" data-cap="${t.num}">Estudiar →</button>
+    </div>
+  `).join('');
+  // Bind "Estudiar" buttons
+  $(selector).querySelectorAll('.study-btn').forEach(b => {
+    b.addEventListener('click', () => studyChapter(parseInt(b.dataset.cap)));
+  });
+}
+
+function studyChapter(capNum){
+  // Set up state: only this chapter, practice mode, 10 questions
+  state.selectedChapters = new Set([capNum]);
+  state.mode = 'practice';
+  state.totalQ = 10;
+  state.source = 'all';
+
+  // Update UI to reflect
+  $$('.mode-card').forEach(c => c.classList.remove('active'));
+  document.querySelector('.mode-card[data-mode="practice"]')?.classList.add('active');
+
+  closeProgress();
+  generateExam();
+}
+
+/* ═════════════════ REVIEW EXAM (only wrong+unseen) ═════════════════ */
+function startReviewExam(){
+  const d = history.load();
+  const answers = d.answers || {};
+  const pool = D.preguntas.filter(q => {
+    const a = answers[q.id];
+    if (!a) return true;            // unseen
+    if (a.fail > 0) return true;    // has been failed at some point
+    return false;
+  });
+  if (!pool.length) { toast('No tienes preguntas pendientes ni falladas'); return; }
+
+  const total = Math.min(20, pool.length);
+  state.exam = {
+    questions: shuffle(pool).slice(0, total),
+    answers: {},
+    graded: false,
+    practiceChecked: new Set(),
+    startTime: Date.now()
+  };
+  state.mode = 'practice';
+  $$('.mode-card').forEach(c => c.classList.remove('active'));
+  document.querySelector('.mode-card[data-mode="practice"]')?.classList.add('active');
+  closeProgress();
+  renderExam();
+  startTimer();
+}
+
+/* ═════════════════ EXPORT / IMPORT PROGRESS ═════════════════ */
+function exportProgress(){
+  const d = history.load();
+  const payload = {
+    app: 'DermaPrep',
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    data: d
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const ts = new Date().toISOString().slice(0,10);
+  a.href = url; a.download = `dermaprep-progreso-${ts}.json`;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  toast('Progreso exportado');
+}
+
+function importProgress(file){
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const data = JSON.parse(e.target.result);
+      if (!data.data || !data.app || data.app !== 'DermaPrep') {
+        toast('Archivo no válido'); return;
+      }
+      if (!confirm('Esto reemplazará tu historial actual con el del archivo. ¿Continuar?')) return;
+      history.save(data.data);
+      renderProgress();
+      toast(`Progreso importado: ${(data.data.exams||[]).length} exámenes`);
+    } catch (err) {
+      toast('Error al leer el archivo');
+    }
+  };
+  reader.readAsText(file);
+}
+
 /* ═════════════════ INIT ═════════════════ */
 function init(){
   renderHeader();
@@ -738,5 +974,23 @@ function init(){
   bindDifficulty();
   renderHistory();
   updateAll();
+
+  // Progress view bindings
+  $('#openProgressBtn')?.addEventListener('click', openProgress);
+  $('#backFromProgressBtn')?.addEventListener('click', closeProgress);
+  $('#exportProgressBtn')?.addEventListener('click', exportProgress);
+  $('#importProgressBtn')?.addEventListener('click', () => $('#importFileInput').click());
+  $('#importFileInput')?.addEventListener('change', (e) => {
+    if (e.target.files[0]) importProgress(e.target.files[0]);
+    e.target.value = '';
+  });
+  $('#resetProgressBtn')?.addEventListener('click', () => {
+    if (confirm('¿Borrar TODO tu historial de estudio? Esta acción no se puede deshacer.')) {
+      history.clear();
+      renderProgress();
+      toast('Historial borrado');
+    }
+  });
+  $('#reviewExamBtn')?.addEventListener('click', startReviewExam);
 }
 init();
