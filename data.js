@@ -258,8 +258,109 @@ window.DERMAPREP_DATA = {
     "cap89_mucosa":        { src:"images/fig_89_mucosa.jpg",                 caption:"Figura del cap. 89 — Hallazgos orales en patomimia (autolesión) o malos tratos." },
     "cap90_inmersion":     { src:"images/fig_90_inmersion.jpg",              caption:"Figura 90-5 — Quemadura por inmersión en agua caliente. Obsérvense las líneas de demarcación, bien definidas y simétricas (signo de quemadura no accidental)." },
     "cap98_queloides":     { src:"images/fig_98_queloides.jpg",              caption:"Figura 98-1 — Queloides. Localizaciones frecuentes: tronco superior y cuello. Se aprecia extensión a piel adyacente normal en patrón en garra." },
-    "cap104_clapo":        { src:"images/fig_104_clapo.jpg",                 caption:"Figura 104-11 — Síndrome CLAPO. A. Malformación capilar en labio inferior y mentón con malformación linfática cervical. B. Malformación linfática microquística en lengua." }
+    "cap104_clapo":        { src:"images/fig_104_clapo.jpg",                 caption:"Figura 104-11 — Síndrome CLAPO. A. Malformación capilar en labio inferior y mentón con malformación linfática cervical. B. Malformación linfática microquística en lengua." },
+
+    /* ──── DermNet (imágenes enlazadas, no descargadas, bajo CC BY-NC-ND 4.0) ──── */
+    /* Cada imagen mantiene la marca de agua y enlace a DermNet por requerimiento de licencia */
+    "dermnet_gpp_1": {
+      src:"https://dermnetnz.org/assets/Uploads/gen-pustular-psoriasis-01.jpg",
+      caption:"Psoriasis pustulosa generalizada (von Zumbusch). Imagen © DermNet New Zealand · <a href='https://dermnetnz.org/topics/generalised-pustular-psoriasis' target='_blank' rel='noopener'>dermnetnz.org/topics/generalised-pustular-psoriasis</a> · Uso bajo licencia CC BY-NC-ND 4.0",
+      external:true
+    },
+    "dermnet_gpp_2": {
+      src:"https://dermnetnz.org/assets/Uploads/gen-pustular-psoriasis-08.jpg",
+      caption:"Psoriasis pustulosa generalizada — confluencia en lagos de pus. Imagen © DermNet New Zealand · <a href='https://dermnetnz.org/topics/generalised-pustular-psoriasis' target='_blank' rel='noopener'>dermnetnz.org/topics/generalised-pustular-psoriasis</a> · CC BY-NC-ND 4.0",
+      external:true
+    },
+    "dermnet_gpp_3": {
+      src:"https://dermnetnz.org/assets/collection/Generalised-pustular-psoriasis/generalised-pustular-psoriasis-0002.jpg",
+      caption:"Psoriasis pustulosa en piel de color (oscura) — el eritema puede ser difícil de detectar y subestimarse. Imagen © DermNet New Zealand · <a href='https://dermnetnz.org/topics/generalised-pustular-psoriasis' target='_blank' rel='noopener'>dermnetnz.org</a> · CC BY-NC-ND 4.0",
+      external:true
+    },
+    "dermnet_gpp_4": {
+      src:"https://dermnetnz.org/assets/collection/Generalised-pustular-psoriasis/generalised-pustular-psoriasis-0006.jpg",
+      caption:"Pústulas superficiales en GPP — pústulas estériles no foliculares de 2-3 mm. Imagen © DermNet New Zealand · <a href='https://dermnetnz.org/topics/generalised-pustular-psoriasis' target='_blank' rel='noopener'>dermnetnz.org</a> · CC BY-NC-ND 4.0",
+      external:true
+    }
   },
+
+  /* ════════════════════════════════════════════════════
+   *  TEMARIO OFICIAL (orden y enfoque de estudio)
+   *  Cada tema mapea uno o varios capítulos del Bolognia
+   * ════════════════════════════════════════════════════ */
+  temario: [
+    { id:1,  nombre:"Principios básicos de dermatología",                          capitulos:[0]   },
+    { id:2,  nombre:"Anatomía y fisiología de la piel",                            capitulos:[1]   },
+    { id:3,  nombre:"Desarrollo y mantenimiento de la piel",                       capitulos:[2]   },
+    { id:4,  nombre:"Inmunología de la piel",                                      capitulos:[4]   },
+    { id:5,  nombre:"Prurito y disestesia",                                        capitulos:[7]   },
+    { id:6,  nombre:"Enfermedades psicocutáneas",                                  capitulos:[89, 91] },
+    { id:7,  nombre:"Psoriasis (incl. pustulosa generalizada)",                    capitulos:[8]   },
+    { id:8,  nombre:"Otros trastornos papuloescamosos / Pitiriasis",               capitulos:[9, 10] },
+    { id:9,  nombre:"Eritrodermia",                                                capitulos:[8, 12] },
+    { id:10, nombre:"Liquen plano y dermatosis liquenoides",                       capitulos:[11]  },
+    { id:11, nombre:"Dermatitis atópica",                                          capitulos:[12]  },
+    { id:12, nombre:"Otras erupciones eccematosas",                                capitulos:[13]  },
+    { id:13, nombre:"Dermatitis de contacto alérgica",                             capitulos:[14]  },
+    { id:14, nombre:"Dermatitis de contacto irritativa",                           capitulos:[15]  },
+    { id:15, nombre:"Fitodermatosis",                                              capitulos:[17]  },
+    { id:16, nombre:"Urticaria y angioedema",                                      capitulos:[18]  },
+    { id:17, nombre:"Eritemas figurados",                                          capitulos:[19]  },
+    { id:18, nombre:"Eritema multiforme, SSJ y NET",                               capitulos:[20]  },
+    { id:19, nombre:"Erupciones medicamentosas",                                   capitulos:[20]  },
+    { id:20, nombre:"Púrpura: mecanismos y dx diferencial",                        capitulos:[22]  },
+    { id:21, nombre:"Vasculitis cutáneas",                                         capitulos:[23]  },
+    { id:22, nombre:"Dermatosis neutrofílicas (Sweet, pioderma, Behçet)",          capitulos:[26]  },
+    { id:23, nombre:"Dermatosis del embarazo",                                     capitulos:[27]  },
+    { id:24, nombre:"Biología de la membrana basal",                               capitulos:[28]  },
+    { id:25, nombre:"Pénfigo",                                                     capitulos:[29]  },
+    { id:26, nombre:"Penfigoide ampolloso",                                        capitulos:[30]  },
+    { id:27, nombre:"Dermatitis herpetiforme y enf. por IgA lineal",               capitulos:[31]  },
+    { id:28, nombre:"Estructura de glándulas ecrinas, apocrinas y sebáceas",       capitulos:[34]  },
+    { id:29, nombre:"Acné vulgar",                                                 capitulos:[36]  },
+    { id:30, nombre:"Rosácea y trastornos asociados",                              capitulos:[37]  },
+    { id:31, nombre:"Foliculitis y otros trastornos foliculares",                  capitulos:[38]  },
+    { id:32, nombre:"Lupus eritematoso",                                           capitulos:[40]  },
+    { id:33, nombre:"Dermatomiositis",                                             capitulos:[41]  },
+    { id:34, nombre:"Esclerosis sistémica",                                        capitulos:[42]  },
+    { id:35, nombre:"Morfea y liquen escleroso",                                   capitulos:[44]  },
+    { id:36, nombre:"Manif. cutáneas de enfermedad sistémica",                     capitulos:[53]  },
+    { id:37, nombre:"Biología de los queratinocitos",                              capitulos:[56]  },
+    { id:38, nombre:"Darier y Hailey-Hailey",                                      capitulos:[59]  },
+    { id:39, nombre:"Biología de los melanocitos",                                 capitulos:[65]  },
+    { id:40, nombre:"Vitíligo y trastornos de hipopigmentación",                   capitulos:[66]  },
+    { id:41, nombre:"Trastornos de hiperpigmentación",                             capitulos:[67]  },
+    { id:42, nombre:"Biología de pelo y uñas",                                     capitulos:[70]  },
+    { id:43, nombre:"Alopecias",                                                   capitulos:[71]  },
+    { id:44, nombre:"Trastornos ungueales",                                        capitulos:[73]  },
+    { id:45, nombre:"Enfermedad oral",                                             capitulos:[74]  },
+    { id:46, nombre:"Infecciones bacterianas",                                     capitulos:[75]  },
+    { id:47, nombre:"Micobacterias (lepra, TBC cutánea, no TBC)",                  capitulos:[76]  },
+    { id:48, nombre:"Enfermedades fúngicas (superficiales, profundas, sistémicas)", capitulos:[77]  },
+    { id:49, nombre:"Manif. cutáneas de VIH",                                      capitulos:[83]  },
+    { id:50, nombre:"Virus del papiloma humano (VPH)",                             capitulos:[82]  },
+    { id:51, nombre:"Virus del herpes humanos",                                    capitulos:[80]  },
+    { id:52, nombre:"Otras enfermedades víricas (sarampión, rubéola, B19, etc.)",  capitulos:[81]  },
+    { id:53, nombre:"ETS (sífilis, gonorrea, chancroide, LGV)",                    capitulos:[79]  },
+    { id:54, nombre:"Protozoarios y helmintos (leishmaniasis, etc.)",              capitulos:[84]  },
+    { id:55, nombre:"Infestaciones (escabiosis, pediculosis, miasis)",             capitulos:[86]  },
+    { id:56, nombre:"Granulomas no infecciosos",                                   capitulos:[99]  },
+    { id:57, nombre:"Biología de la matriz extracelular",                          capitulos:[95]  },
+    { id:58, nombre:"Hipertrofias dérmicas (cicatrices y queloides)",              capitulos:[98]  },
+    { id:59, nombre:"Paniculitis (eritema nudoso, eritema indurado)",              capitulos:[100, 21] },
+    { id:60, nombre:"Úlceras",                                                     capitulos:[106] },
+    { id:61, nombre:"Hemangiomas infantiles",                                      capitulos:[103] },
+    { id:62, nombre:"Malformaciones vasculares",                                   capitulos:[104] },
+    { id:63, nombre:"Proliferaciones y tumores epidérmicos benignos",              capitulos:[109] },
+    { id:64, nombre:"Quistes cutáneos",                                            capitulos:[109] },
+    { id:65, nombre:"Neoplasias melanocíticas benignas",                           capitulos:[68]  },
+    { id:66, nombre:"Melanoma",                                                    capitulos:[69]  },
+    { id:67, nombre:"Linfoma cutáneo de células T",                                capitulos:[94]  },
+    { id:68, nombre:"Lesiones epiteliales precancerosas",                          capitulos:[110] },
+    { id:69, nombre:"Carcinoma espinocelular / epidermoide",                       capitulos:[109] },
+    { id:70, nombre:"Carcinoma basocelular",                                       capitulos:[108] },
+    { id:71, nombre:"Principios de biología tumoral (CBC/CE)",                     capitulos:[107] }
+  ],
 
   /* ════════════════════════════════════════════════════
    *  BANCO DE PREGUNTAS
@@ -1278,7 +1379,153 @@ window.DERMAPREP_DATA = {
         "Tronco posterior",
         "Cuero cabelludo en áreas pilosas"
       ], correcta:1,
-      explicacion:"Las localizaciones de alto riesgo metastásico para CE incluyen labio (especialmente inferior), oreja y mucosas, además de los CE sobre cicatrices, úlceras crónicas o en inmunodeprimidos." }
+      explicacion:"Las localizaciones de alto riesgo metastásico para CE incluyen labio (especialmente inferior), oreja y mucosas, además de los CE sobre cicatrices, úlceras crónicas o en inmunodeprimidos." },
+
+    /* ═══════════════════════════════════════════════════════
+     *   PSORIASIS PUSTULOSA GENERALIZADA (von Zumbusch) — GPP
+     *   Fuentes combinadas: Bolognia cap. 8 + DermNet (dermnetnz.org)
+     * ═══════════════════════════════════════════════════════ */
+
+    { id:"DRM-GPP-01", capitulo:8, nivel:"facil", tipo:"opcion_multiple", fuente:"dermnet", imagen:"dermnet_gpp_1",
+      enunciado:"Observe la imagen. Esta presentación cutánea con eritema confluente generalizado y pústulas superficiales recibe el nombre histórico de:",
+      opciones:[
+        "Psoriasis de von Zumbusch",
+        "Psoriasis de Köbner",
+        "Psoriasis de Auspitz",
+        "Psoriasis de Munro"
+      ], correcta:0,
+      explicacion:"La GPP también se conoce como psoriasis aguda generalizada de von Zumbusch (DermNet, 2024)." },
+
+    { id:"DRM-GPP-02", capitulo:8, nivel:"facil", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"Edad de presentación más frecuente de la psoriasis pustulosa generalizada (GPP) en adultos:",
+      opciones:["10-20 años","20-30 años","40-50 años","> 70 años"], correcta:2,
+      explicacion:"La GPP puede aparecer a cualquier edad, pero es más común entre los 40-50 años en adultos; es rara en niños." },
+
+    { id:"DRM-GPP-03", capitulo:8, nivel:"medio", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"La GPP que afecta a una mujer embarazada recibe el nombre clínico de:",
+      opciones:[
+        "Eritema gestationis",
+        "Impétigo herpetiforme",
+        "Prurigo gravídico",
+        "Pénfigo gestacional"
+      ], correcta:1,
+      explicacion:"La GPP del embarazo se denomina impétigo herpetiforme y se asocia a aumento de morbilidad materna y fetal." },
+
+    { id:"DRM-GPP-04", capitulo:8, nivel:"medio", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"Mutación genética asociada característicamente a la GPP que NO se acompaña de psoriasis en placas:",
+      opciones:[
+        "Mutaciones en CARD14",
+        "Mutaciones homocigóticas/heterocigóticas compuestas en IL36RN",
+        "Mutaciones en HLA-Cw6",
+        "Mutaciones en NOD2"
+      ], correcta:1,
+      explicacion:"Las mutaciones bialélicas en IL36RN (antagonista del receptor de IL-36) se asocian a GPP no acompañada de psoriasis en placas. CARD14 se asocia más a GPP con psoriasis en placas concomitante." },
+
+    { id:"DRM-GPP-05", capitulo:8, nivel:"medio", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"Desencadenante farmacológico clásico de la GPP a tener muy presente en la anamnesis:",
+      opciones:[
+        "Inicio de antihistamínicos H1",
+        "Retirada brusca de corticoides sistémicos o ciclosporina",
+        "Inicio de paracetamol",
+        "Inicio de vitamina D oral"
+      ], correcta:1,
+      explicacion:"La suspensión abrupta de corticoides sistémicos o ciclosporina es un desencadenante clásico de la GPP (efecto rebote). Otros fármacos: AINE, terbinafina, hidroxicloroquina, paradoja con anti-TNFα." },
+
+    { id:"DRM-GPP-06", capitulo:8, nivel:"facil", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"Característica histopatológica DISTINTIVA de la GPP en la biopsia cutánea:",
+      opciones:[
+        "Microabscesos eosinofílicos de Pautrier",
+        "Pústulas espongiformes subcorneales de Kogoj",
+        "Granulomas no caseificantes",
+        "Vasculitis leucocitoclástica"
+      ], correcta:1,
+      explicacion:"Las pústulas espongiformes de Kogoj (subcorneales, neutrofílicas) son el hallazgo histopatológico distintivo de la GPP. Los microabscesos de Munro también son característicos." },
+
+    { id:"DRM-GPP-07", capitulo:8, nivel:"medio", tipo:"verdadero_falso", fuente:"dermnet", imagen:"dermnet_gpp_4",
+      enunciado:"La GPP se caracteriza por brotes recurrentes de pústulas estériles no foliculares de 2-3 mm que aparecen en 2-3 horas sobre piel eritematosa dolorosa, y que confluyen formando «lagos» de pus.",
+      respuesta:true,
+      explicacion:"Texto literal de DermNet: «within 2-3 hours, 2-3 mm sterile non-follicular pustules appear, which then converge to form lakes of pus»." },
+
+    { id:"DRM-GPP-08", capitulo:8, nivel:"dificil", tipo:"opcion_multiple", fuente:"dermnet", imagen:"dermnet_gpp_2",
+      enunciado:"Mujer de 45 años, hospitalizada por brote súbito de pústulas confluentes generalizadas (como en la imagen), fiebre 39 °C, leucocitosis, PCR elevada e hipocalcemia. Tres semanas antes suspendió corticoide oral por su cuenta. El diagnóstico más probable y el manejo INICIAL óptimo son:",
+      opciones:[
+        "PEGA — suspender el último fármaco introducido + soporte ambulatorio",
+        "Síndrome de Sweet — colchicina oral + alta hospitalaria",
+        "GPP (von Zumbusch) — hospitalización con fluidoterapia, soporte de electrolitos y tratamiento sistémico (acitretina, ciclosporina, biológico o spesolimab)",
+        "NET — IgIV + suspender corticoides progresivamente"
+      ], correcta:2,
+      explicacion:"Brote agudo de GPP tras retirada brusca de corticoides. Requiere hospitalización y a veces UCI. Tratamiento sistémico de elección: acitretina, ciclosporina, MTX o biológicos (anti-IL36 spesolimab, anti-TNF, anti-IL17, anti-IL23)." },
+
+    { id:"DRM-GPP-09", capitulo:8, nivel:"dificil", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"Biológico recientemente aprobado específicamente para los brotes de GPP, dirigido contra la interleucina 36:",
+      opciones:["Adalimumab","Secukinumab","Spesolimab","Guselkumab"], correcta:2,
+      explicacion:"Spesolimab es un anticuerpo monoclonal anti-receptor de IL-36, aprobado específicamente para los brotes agudos de GPP. Imsidolimab (también anti-IL36) está en investigación." },
+
+    { id:"DRM-GPP-10", capitulo:8, nivel:"medio", tipo:"asociacion", fuente:"dermnet",
+      enunciado:"Asocie cada diana terapéutica con el biológico empleado en la GPP:",
+      pares:[
+        { item:"TNFα",            pareja:"Adalimumab, infliximab, etanercept" },
+        { item:"IL-17",            pareja:"Secukinumab, ixekizumab, brodalumab" },
+        { item:"IL-23",            pareja:"Guselkumab, risankizumab" },
+        { item:"IL-12/23 (p40)",   pareja:"Ustekinumab" },
+        { item:"Receptor de IL-36", pareja:"Spesolimab" }
+      ],
+      explicacion:"Clasificación de las dianas terapéuticas biológicas usadas en GPP (DermNet, 2024)." },
+
+    { id:"DRM-GPP-11", capitulo:8, nivel:"medio", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"Hallazgo MUCOSO característico que puede acompañar a un brote de GPP:",
+      opciones:[
+        "Estrías de Wickham linguales",
+        "Lengua geográfica o lengua fisurada / queilitis",
+        "Manchas de Koplik",
+        "Petequias palatinas"
+      ], correcta:1,
+      explicacion:"Manifestaciones mucosas extracutáneas de la GPP: queilitis, lengua geográfica, lengua fisurada (DermNet)." },
+
+    { id:"DRM-GPP-12", capitulo:8, nivel:"facil", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"Causa de muerte más frecuente durante un brote agudo grave de GPP:",
+      opciones:[
+        "Hemorragia cerebral",
+        "Insuficiencia cardiorrespiratoria durante la fase eruptiva aguda",
+        "Embolismo pulmonar masivo",
+        "Hipertermia maligna"
+      ], correcta:1,
+      explicacion:"DermNet: «La muerte puede resultar de insuficiencia cardiorrespiratoria durante la fase eruptiva aguda... Pacientes mayores son especialmente de alto riesgo». Tasa de mortalidad descrita 3-7%." },
+
+    { id:"DRM-GPP-13", capitulo:8, nivel:"medio", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"En el diagnóstico diferencial principal de la GPP destaca, por similitud clínica y necesidad de descartarla siempre:",
+      opciones:[
+        "Pénfigo vulgar",
+        "Pustulosis exantemática generalizada aguda (PEGA / AGEP)",
+        "Pénfigo paraneoplásico",
+        "Lupus eritematoso cutáneo subagudo"
+      ], correcta:1,
+      explicacion:"DermNet menciona como ddx clave la PEGA (acute generalised exanthematous pustulosis). La presencia de eosinófilos en biopsia inclina a PEGA; antecedente farmacológico reciente también orienta a PEGA." },
+
+    { id:"DRM-GPP-14", capitulo:8, nivel:"medio", tipo:"verdadero_falso", fuente:"dermnet",
+      enunciado:"Según los criterios diagnósticos japoneses de 2018, el diagnóstico definitivo de GPP requiere los CUATRO siguientes: síntomas sistémicos (fiebre, fatiga), eritrodermia/eritema extenso con pústulas estériles múltiples que pueden confluir, pústulas subcorneales neutrofílicas con espongiosis de Kogoj en histología, y recurrencia de estos hallazgos.",
+      respuesta:true,
+      explicacion:"Criterios diagnósticos japoneses (Fujita et al., 2018) recogidos por DermNet." },
+
+    { id:"DRM-GPP-15", capitulo:8, nivel:"dificil", tipo:"opcion_multiple", fuente:"dermnet",
+      enunciado:"Reacción paradójica descrita en el contexto de tratamiento con inhibidores del TNFα y ustekinumab, en la que algunos pacientes desarrollan psoriasis pustulosa o GPP de novo:",
+      opciones:[
+        "Síndrome del intestino corto",
+        "Psoriasis paradójica",
+        "Lupus inducido por fármacos",
+        "Síndrome de Stevens-Johnson"
+      ], correcta:1,
+      explicacion:"La psoriasis paradójica (incluyendo GPP) puede aparecer en pacientes tratados con anti-TNFα o ustekinumab, particularmente si se usan para enfermedades como artritis reumatoide o enfermedad de Crohn." },
+
+    { id:"DRM-GPP-16", capitulo:8, nivel:"medio", tipo:"opcion_multiple", fuente:"dermnet", imagen:"dermnet_gpp_3",
+      enunciado:"En la imagen se observa un brote de GPP en piel oscura (piel de color). ¿Qué consideración clínica es CIERTA en este contexto, según DermNet?",
+      opciones:[
+        "La GPP no afecta a personas con piel oscura",
+        "El eritema puede infraestimarse en piel oscura, lo que puede llevar a subestimar la gravedad de la inflamación",
+        "La presentación es siempre más leve que en piel clara",
+        "Las pústulas son menos numerosas en piel oscura"
+      ], correcta:1,
+      explicacion:"DermNet enfatiza: «Erythema can be under-recognised in skin of colour, and therefore the severity of inflammation can be underestimated». Buscar pústulas, descamación y patrón es clave en estos pacientes." }
 
   ]
 };
