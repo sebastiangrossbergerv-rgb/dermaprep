@@ -180,57 +180,60 @@ window.DERMAPREP_DATA = {
     { num:108,titulo:"Carcinoma basocelular",                                seccion:17, presente:true  },
     { num:109,titulo:"Carcinoma epidermoide / escamoso",                     seccion:17, presente:true  },
     { num:110,titulo:"Queratosis actínica y otros precancerosos",            seccion:17, presente:true  },
-    // ───────── SECCIÓN 18 — Neoplasias ─────────
-    { num:112,titulo:"Quistes cutáneos",                                     seccion:18, presente:false },
-    { num:113,titulo:"Tumores anexiales benignos",                           seccion:18, presente:false },
-    { num:114,titulo:"Tumores anexiales malignos",                           seccion:18, presente:false },
-    { num:115,titulo:"Queratosis y queilitis actínicas",                     seccion:18, presente:false },
-    { num:116,titulo:"Carcinoma basocelular",                                seccion:18, presente:false },
-    { num:117,titulo:"Carcinoma epidermoide / escamoso",                     seccion:18, presente:false },
-    { num:118,titulo:"Otros tumores epiteliales malignos",                   seccion:18, presente:false },
-    { num:119,titulo:"Tumores neuroendocrinos (Merkel)",                     seccion:18, presente:false },
-    { num:121,titulo:"Tumores fibrohistiocíticos benignos",                  seccion:18, presente:false },
-    { num:122,titulo:"DFSP y otros sarcomas",                                seccion:18, presente:false },
-    { num:123,titulo:"Tumores neurales y musculares",                        seccion:18, presente:false },
-    { num:124,titulo:"Metástasis cutáneas",                                  seccion:18, presente:false },
-    { num:125,titulo:"Síndromes paraneoplásicos",                            seccion:18, presente:false },
-    { num:126,titulo:"Trasplantes de órganos y piel",                        seccion:18, presente:false },
-    { num:127,titulo:"Tumores epidérmicos benignos (queratosis seborr.)",    seccion:18, presente:false },
-    { num:128,titulo:"Tumores benignos misceláneos",                         seccion:18, presente:false },
-    // ───────── SECCIÓN 19 — Tratamiento médico ─────────
-    { num:129,titulo:"Glucocorticoides y otros tratamientos tópicos",        seccion:19, presente:false },
-    { num:130,titulo:"Inmunomoduladores tópicos",                            seccion:19, presente:false },
-    { num:131,titulo:"Retinoides sistémicos",                                seccion:19, presente:false },
-    { num:132,titulo:"Inmunosupresores e inmunomoduladores sistémicos",      seccion:19, presente:false },
-    { num:133,titulo:"Terapias biológicas",                                  seccion:19, presente:false },
-    { num:134,titulo:"Antihistamínicos y antialérgicos",                     seccion:19, presente:false },
-    { num:135,titulo:"Antibióticos sistémicos",                              seccion:19, presente:false },
-    { num:136,titulo:"Antivirales sistémicos",                               seccion:19, presente:false },
-    { num:137,titulo:"Antifúngicos sistémicos",                              seccion:19, presente:false },
-    { num:138,titulo:"Reacciones adversas a fármacos",                       seccion:19, presente:false },
-    // ───────── SECCIÓN 20 — Tratamiento físico ─────────
-    { num:139,titulo:"Fototerapia UVB y PUVA",                               seccion:20, presente:false },
-    { num:140,titulo:"Terapia fotodinámica",                                 seccion:20, presente:false },
-    { num:141,titulo:"Radioterapia dermatológica",                           seccion:20, presente:false },
-    { num:142,titulo:"Láseres y luz pulsada intensa",                        seccion:20, presente:false },
-    // ───────── SECCIÓN 21 — Cirugía ─────────
-    { num:143,titulo:"Anestesia y preoperatorio en cirugía dermatológica",   seccion:21, presente:false },
-    { num:144,titulo:"Técnica quirúrgica básica y suturas",                  seccion:21, presente:false },
-    { num:145,titulo:"Reconstrucción con colgajos cutáneos",                 seccion:21, presente:false },
-    { num:146,titulo:"Reconstrucción con injertos cutáneos",                 seccion:21, presente:false },
-    { num:147,titulo:"Cirugía de Mohs",                                      seccion:21, presente:false },
-    { num:148,titulo:"Crioterapia y electrocirugía",                         seccion:21, presente:false },
-    { num:149,titulo:"Cirugía de la uña",                                    seccion:21, presente:false },
-    { num:150,titulo:"Complicaciones quirúrgicas y cicatrización",           seccion:21, presente:false },
-    // ───────── SECCIÓN 22 — Cirugía estética ─────────
-    { num:151,titulo:"Toxina botulínica",                                    seccion:22, presente:false },
-    { num:152,titulo:"Materiales de relleno (fillers)",                      seccion:22, presente:false },
-    { num:153,titulo:"Esclerosis de varices",                                seccion:22, presente:false },
-    { num:154,titulo:"Peelings químicos",                                    seccion:22, presente:false },
-    { num:155,titulo:"Liposucción y lipoescultura",                          seccion:22, presente:false },
-    { num:156,titulo:"Trasplante capilar",                                   seccion:22, presente:false },
-    { num:157,titulo:"Cosmecéuticos",                                        seccion:22, presente:false },
-    { num:158,titulo:"Tatuajes y eliminación de tatuajes",                   seccion:22, presente:false }
+    // ───────── SECCIÓN 18 — Neoplasias (VOLUMEN 3) ─────────
+    { num:111,titulo:"Neoplasias anexiales",                                 seccion:18, presente:true  },
+    { num:112,titulo:"Neoplasias melanocíticas benignas (efélides, lentigos, MCL)", seccion:18, presente:true  },
+    { num:113,titulo:"Melanoma",                                             seccion:18, presente:true  },
+    { num:114,titulo:"Neoplasias y proliferaciones vasculares (Kaposi)",     seccion:18, presente:true  },
+    { num:115,titulo:"Neoplasias neurales y neuroendocrinas (Merkel)",       seccion:18, presente:true  },
+    { num:116,titulo:"Proliferaciones fibrosas y fibrohistiocíticas",        seccion:18, presente:true  },
+    { num:117,titulo:"Neoplasias del músculo liso, tejido adiposo y cartílago", seccion:18, presente:true  },
+    { num:118,titulo:"Mastocitosis",                                         seccion:18, presente:true  },
+    { num:119,titulo:"Linfomas de linfocitos B de la piel",                  seccion:18, presente:true  },
+    { num:120,titulo:"Linfoma cutáneo de linfocitos T",                      seccion:18, presente:true  },
+    { num:121,titulo:"Otras enfermedades linfoproliferativas y mieloproliferativas", seccion:18, presente:true  },
+    { num:122,titulo:"Metástasis cutáneas",                                  seccion:18, presente:true  },
+    { num:123,titulo:"Síndromes paraneoplásicos",                            seccion:18, presente:true  },
+    { num:124,titulo:"Barrera cutánea y vehículos tópicos",                  seccion:18, presente:true  },
+    // ───────── SECCIÓN 19 — Tratamiento médico (VOLUMEN 3) ─────────
+    { num:125,titulo:"Glucocorticoides (tópicos y sistémicos)",              seccion:19, presente:true  },
+    { num:126,titulo:"Retinoides",                                           seccion:19, presente:true  },
+    { num:127,titulo:"Fármacos antimicrobianos",                             seccion:19, presente:true  },
+    { num:128,titulo:"Inmunosupresores e inmunomoduladores sistémicos",      seccion:19, presente:true  },
+    { num:129,titulo:"Otros medicamentos tópicos (imiquimod, etc.)",         seccion:19, presente:true  },
+    { num:130,titulo:"Otros fármacos sistémicos (antipalúdicos, dapsona)",   seccion:19, presente:true  },
+    { num:131,titulo:"Interacciones farmacológicas",                         seccion:19, presente:true  },
+    // ───────── SECCIÓN 20 — Tratamiento físico (VOLUMEN 3) ─────────
+    { num:132,titulo:"Protectores solares y fotoprotección",                 seccion:20, presente:true  },
+    { num:133,titulo:"Medicina complementaria y alternativa",                seccion:20, presente:true  },
+    { num:134,titulo:"Fototerapia (UVB, PUVA)",                              seccion:20, presente:true  },
+    { num:135,titulo:"Terapia fotodinámica",                                 seccion:20, presente:true  },
+    { num:136,titulo:"Láseres y dispositivos basados en luz",                seccion:20, presente:true  },
+    { num:137,titulo:"Terapias biológicas",                                  seccion:20, presente:true  },
+    { num:138,titulo:"Criocirugía",                                          seccion:20, presente:true  },
+    { num:139,titulo:"Electrocirugía",                                       seccion:20, presente:true  },
+    { num:140,titulo:"Radioterapia",                                         seccion:20, presente:true  },
+    // ───────── SECCIÓN 21 — Cirugía (VOLUMEN 3) ─────────
+    { num:141,titulo:"Biología de la cicatrización de las heridas",          seccion:21, presente:true  },
+    { num:142,titulo:"Anatomía quirúrgica de cabeza y cuello",               seccion:21, presente:true  },
+    { num:143,titulo:"Anestesia",                                            seccion:21, presente:true  },
+    { num:144,titulo:"Técnica quirúrgica básica y suturas",                  seccion:21, presente:true  },
+    { num:145,titulo:"Escisión, biopsia y técnicas básicas",                 seccion:21, presente:true  },
+    { num:146,titulo:"Cirugía micrográfica de Mohs",                         seccion:21, presente:true  },
+    { num:147,titulo:"Colgajos cutáneos",                                    seccion:21, presente:true  },
+    { num:148,titulo:"Injertos cutáneos",                                    seccion:21, presente:true  },
+    { num:149,titulo:"Cirugía de la uña",                                    seccion:21, presente:true  },
+    { num:150,titulo:"Complicaciones quirúrgicas",                           seccion:21, presente:true  },
+    // ───────── SECCIÓN 22 — Cirugía estética (VOLUMEN 3) ─────────
+    { num:151,titulo:"Liposucción y abdominoplastia",                        seccion:22, presente:true  },
+    { num:152,titulo:"Trasplante capilar",                                   seccion:22, presente:true  },
+    { num:153,titulo:"Cosméticos y cosmecéuticos",                           seccion:22, presente:true  },
+    { num:154,titulo:"Peelings químicos",                                    seccion:22, presente:true  },
+    { num:155,titulo:"Dermoabrasión y microdermoabrasión",                   seccion:22, presente:true  },
+    { num:156,titulo:"Tratamientos no ablativos y rejuvenecimiento",         seccion:22, presente:true  },
+    { num:157,titulo:"Esclerosis de varices y telangiectasias",              seccion:22, presente:true  },
+    { num:158,titulo:"Materiales de relleno (fillers)",                      seccion:22, presente:true  },
+    { num:159,titulo:"Toxina botulínica",                                    seccion:22, presente:true  }
   ],
 
   /* ════════ IMÁGENES extraídas del PDF ════════ */
@@ -281,7 +284,18 @@ window.DERMAPREP_DATA = {
       src:"https://dermnetnz.org/assets/collection/Generalised-pustular-psoriasis/generalised-pustular-psoriasis-0006.jpg",
       caption:"Pústulas superficiales en GPP — pústulas estériles no foliculares de 2-3 mm. Imagen © DermNet New Zealand · <a href='https://dermnetnz.org/topics/generalised-pustular-psoriasis' target='_blank' rel='noopener'>dermnetnz.org</a> · CC BY-NC-ND 4.0",
       external:true
-    }
+    },
+
+    /* ──── VOLUMEN 3 ──── */
+    "cap113_acral":           { src:"images/fig_113_melanoma_acral.jpg",          caption:"Capítulo 113 — Melanoma acral lentiginoso en planta: mácula pigmentada asimétrica con varios tonos y bordes irregulares." },
+    "cap113_histologia":      { src:"images/fig_113_melanoma_histologia.jpg",     caption:"Capítulo 113 — Histología del melanoma: melanocitos atípicos con disposición pagetoide en epidermis." },
+    "cap113_nevus_riesgo":    { src:"images/fig_113_melanoma_nevus_riesgo.jpg",   caption:"Capítulo 113 — Nevos melanocíticos atípicos como indicadores de riesgo de melanoma: el riesgo relativo aumenta proporcionalmente al número de nevos atípicos." },
+    "cap118_mastocitosis":    { src:"images/fig_118_mastocitosis_supervivencia.jpg", caption:"Figura 118-1 — Supervivencia de pacientes con mastocitosis sistémica según subtipo (MSI = indolente, MSA = agresiva, MS-AHNMD = con neoplasia hematológica)." },
+    "cap138_radioterapia":    { src:"images/fig_138_radioterapia_electrones.jpg", caption:"Capítulo 138 — Profundidad de dosis de los haces de electrones según energía (4-15 MeV) usados en radioterapia dermatológica." },
+    "cap141_cicatrizacion":   { src:"images/fig_141_cicatrizacion.jpg",           caption:"Figura 141 — Respuesta inflamatoria durante la curación de una herida: plaquetas → neutrófilos → macrófagos M1/M2 con sus mediadores." },
+    "cap142_musculos":        { src:"images/fig_142_musculos_faciales.jpg",       caption:"Figura 142 — Músculos de la expresión facial (vistas anterior y lateral): clave para sitios de inyección de toxina botulínica y diseño de colgajos." },
+    "cap147_colgajo":         { src:"images/fig_147_colgajo_nasal.jpg",           caption:"Capítulo 147 — Colgajo nasal: A. Defecto post-Mohs en ala nasal. B-C. Diseño del colgajo. D-E. Resultado tras la reconstrucción." },
+    "cap159_toxina":          { src:"images/fig_159_toxina_frontal.jpg",          caption:"Capítulo 159 — Toxina botulínica para arrugas glabelares. A. Antes del tratamiento. B. Tras inyección en músculos corrugador, prócer y orbicular." }
   },
 
   /* ════════════════════════════════════════════════════
@@ -353,13 +367,21 @@ window.DERMAPREP_DATA = {
     { id:62, nombre:"Malformaciones vasculares",                                   capitulos:[104] },
     { id:63, nombre:"Proliferaciones y tumores epidérmicos benignos",              capitulos:[109] },
     { id:64, nombre:"Quistes cutáneos",                                            capitulos:[109] },
-    { id:65, nombre:"Neoplasias melanocíticas benignas",                           capitulos:[68]  },
-    { id:66, nombre:"Melanoma",                                                    capitulos:[69]  },
-    { id:67, nombre:"Linfoma cutáneo de células T",                                capitulos:[94]  },
+    { id:65, nombre:"Neoplasias melanocíticas benignas",                           capitulos:[112]  },
+    { id:66, nombre:"Melanoma",                                                    capitulos:[113]  },
+    { id:67, nombre:"Linfoma cutáneo de células T",                                capitulos:[120]  },
     { id:68, nombre:"Lesiones epiteliales precancerosas",                          capitulos:[110] },
     { id:69, nombre:"Carcinoma espinocelular / epidermoide",                       capitulos:[109] },
     { id:70, nombre:"Carcinoma basocelular",                                       capitulos:[108] },
-    { id:71, nombre:"Principios de biología tumoral (CBC/CE)",                     capitulos:[107] }
+    { id:71, nombre:"Principios de biología tumoral (CBC/CE)",                     capitulos:[107] },
+    { id:72, nombre:"Sarcoma de Kaposi",                                           capitulos:[114] },
+    { id:73, nombre:"Carcinoma de células de Merkel",                              capitulos:[115] },
+    { id:74, nombre:"Mastocitosis (urticaria pigmentosa)",                         capitulos:[118] },
+    { id:75, nombre:"Barrera cutánea y vehículos tópicos",                         capitulos:[124] },
+    { id:76, nombre:"Biología de la cicatrización de heridas",                     capitulos:[141] },
+    { id:77, nombre:"Anatomía quirúrgica de cabeza y cuello",                      capitulos:[142] },
+    { id:78, nombre:"Cirugía de Mohs / dermatológica",                             capitulos:[146, 147] },
+    { id:79, nombre:"Toxina botulínica y estética",                                capitulos:[159] }
   ],
 
   /* ════════════════════════════════════════════════════
@@ -1525,7 +1547,631 @@ window.DERMAPREP_DATA = {
         "La presentación es siempre más leve que en piel clara",
         "Las pústulas son menos numerosas en piel oscura"
       ], correcta:1,
-      explicacion:"DermNet enfatiza: «Erythema can be under-recognised in skin of colour, and therefore the severity of inflammation can be underestimated». Buscar pústulas, descamación y patrón es clave en estos pacientes." }
+      explicacion:"DermNet enfatiza: «Erythema can be under-recognised in skin of colour, and therefore the severity of inflammation can be underestimated». Buscar pústulas, descamación y patrón es clave en estos pacientes." },
+
+    /* ═══════════════════════════════════════════════════════
+     *  PREGUNTAS DEL VOLUMEN 3 (Bolognia caps. 111-159)
+     *  Foco: TEMARIO OFICIAL + CASOS CLÍNICOS
+     * ═══════════════════════════════════════════════════════ */
+
+    /* ─── CAP 112 — NEOPLASIAS MELANOCÍTICAS BENIGNAS (Tema 65) ─── */
+    { id:"BOL-C112-01", capitulo:112, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Las EFÉLIDES (pecas) se diferencian de los lentigos solares en que:",
+      opciones:[
+        "Aparecen en la edad adulta y persisten toda la vida sin variación estacional",
+        "Aparecen al principio de la infancia, se aclaran si no hay exposición solar, son más oscuras en verano y más claras en invierno",
+        "Son lesiones premalignas y deben biopsiarse",
+        "Solo aparecen en piel oscura"
+      ], correcta:1,
+      explicacion:"Tabla 112-1 del cap. 112: efélides aparecen al principio de la infancia, se aclaran sin exposición solar, son más oscuras en verano. Los lentigos solares persisten toda la vida." },
+
+    { id:"BOL-C112-02", capitulo:112, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Las manchas café con leche (MCL) del síndrome de McCune-Albright se distinguen de las de la neurofibromatosis tipo 1 (NF1) porque:",
+      opciones:[
+        "Son más numerosas en McCune-Albright",
+        "Tienen un patrón de pigmentación segmentaria, bandas anchas a lo largo de las líneas de Blaschko",
+        "Solo aparecen en mucosas",
+        "Son siempre congénitas en McCune-Albright"
+      ], correcta:1,
+      explicacion:"Texto del cap. 112: en McCune-Albright las MCL tienen demarcación en línea media, patrón segmentario, bandas anchas a lo largo de líneas de Blaschko. En NF1 son típicamente regulares y ovaladas." },
+
+    { id:"BOL-C112-03", capitulo:112, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"Las manchas café con leche (MCL) están presentes al nacimiento en algunos casos, pero pueden volverse clínicamente evidentes durante el primer año de vida y luego aumentan de tamaño proporcionalmente al crecimiento del cuerpo.",
+      respuesta:true,
+      explicacion:"Texto literal del cap. 112: «pueden estar presentes en el nacimiento, pero generalmente se vuelven clínicamente evidentes durante el primer año de vida y luego aumentan de tamaño proporcionalmente al crecimiento»." },
+
+    /* ─── CAP 113 — MELANOMA (Tema 66, MUY IMPORTANTE) ─── */
+    { id:"BOL-C113-01", capitulo:113, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Receptor que activa la melanocortina 1 (MC1R) y que es uno de los receptores clave de la regulación del color de piel y cabello:",
+      opciones:["α-MSH (hormona estimulante del melanocito)","TGF-β","VEGF","Insulina"], correcta:0,
+      explicacion:"Texto del cap. 113: MC1R es activado por melanocortinas (ACTH y α-MSH). Variantes de MC1R con feotipo rojo-pelirrojo y piel clara aumentan el riesgo de melanoma." },
+
+    { id:"BOL-C113-02", capitulo:113, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Anticuerpo monoclonal aprobado para melanoma metastásico que bloquea CTLA-4:",
+      opciones:["Pembrolizumab","Nivolumab","Ipilimumab","Vemurafenib"], correcta:2,
+      explicacion:"Texto del cap. 113: el antígeno 4 asociado a linfocitos T citotóxicos (CTLA-4) es un inhibidor de CD28 que se estimula tras activación T. Ipilimumab bloquea CTLA-4. Pembrolizumab y nivolumab bloquean PD-1." },
+
+    { id:"BOL-C113-03", capitulo:113, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap113_nevus_riesgo",
+      enunciado:"Según los estudios reflejados en la figura del cap. 113, ¿cuál es el indicador con mayor riesgo relativo de desarrollar melanoma?",
+      opciones:[
+        "Tener 1 nevo común",
+        "Tener > 10 nevos atípicos (riesgo relativo > 30)",
+        "Tener cabello castaño",
+        "Vivir en latitudes bajas"
+      ], correcta:1,
+      explicacion:"Estudio de Tucker et al. 1997: pacientes con > 10 nevos melanocíticos atípicos presentan un riesgo relativo de melanoma > 30 frente a la población general." },
+
+    { id:"BOL-C113-04", capitulo:113, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap113_acral",
+      enunciado:"CASO CLÍNICO: Hombre de 65 años de origen asiático con la lesión mostrada en la imagen: mácula pigmentada de 1.5 cm en planta del pie, asimétrica, con varios tonos de negro, bordes irregulares, evolución de 8 meses. Diagnóstico más probable y conducta inmediata:",
+      opciones:[
+        "Hematoma subungueal — observación y nueva valoración en 6 meses",
+        "Melanoma acral lentiginoso — biopsia escisional completa con margen estrecho (2 mm)",
+        "Nevus azul — extirpación electiva por estética",
+        "Hiperpigmentación postraumática — fotoprotección"
+      ], correcta:1,
+      explicacion:"Melanoma acral lentiginoso: subtipo más frecuente en piel oscura y asiáticos. Características ABCDE. Biopsia escisional completa con márgenes estrechos (1-3 mm) preserva la lesión para evaluación correcta del grosor de Breslow (definitivo en pronóstico)." },
+
+    { id:"BOL-C113-05", capitulo:113, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"En la epidemiología del melanoma (cap. 113), las MAYORES tasas de incidencia mundiales se observan en:",
+      opciones:[
+        "Países nórdicos europeos",
+        "Mediterráneo y África subsahariana",
+        "Australia y Nueva Zelanda (en torno a Queensland, Australia)",
+        "Sudamérica ecuatorial"
+      ], correcta:2,
+      explicacion:"Texto del cap. 113: las mayores tasas de incidencia corresponden a Australia y Nueva Zelanda (~39 casos/100.000 mujeres y 60/100.000 varones en Australia 2016). Queensland tiene las tasas más altas." },
+
+    { id:"BOL-C113-06", capitulo:113, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 45 años, fototipo II, con lesión asimétrica de 7 mm en espalda. Biopsia escisional revela: melanoma de extensión superficial, Breslow 0,8 mm, sin ulceración, índice mitótico < 1/mm². ¿Cuál es el margen de escisión definitiva recomendado y necesita biopsia de ganglio centinela?",
+      opciones:[
+        "Margen 0.5 cm; no requiere ganglio centinela",
+        "Margen 1 cm; considerar ganglio centinela si Breslow > 0.8 mm",
+        "Margen 2 cm; siempre ganglio centinela",
+        "Margen 3 cm; siempre ganglio centinela + linfadenectomía"
+      ], correcta:1,
+      explicacion:"Guías actuales: márgenes 1 cm para Breslow ≤ 1 mm. La biopsia de ganglio centinela se ofrece típicamente desde Breslow > 0.8 mm o con factores de riesgo adicionales (ulceración, mitosis altas)." },
+
+    { id:"BOL-C113-07", capitulo:113, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"En el melanoma cutáneo, observaciones clínicas como la regresión incompleta o completa, el desarrollo de despigmentación de tipo vitíligo y los nevos con halo (de Sutton) son evidencia de respuesta inmunitaria del huésped contra el melanoma.",
+      respuesta:true,
+      explicacion:"Texto literal del cap. 113: «el desarrollo asociado de despigmentación de tipo vitíligo y de nevos con halo, y la mayor incidencia de melanoma en pacientes inmunodeprimidos parecen indicar que el melanoma es un tumor inmunógeno»." },
+
+    /* ─── CAP 114 — SARCOMA DE KAPOSI (Tema 72) ─── */
+    { id:"BOL-C114-01", capitulo:114, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Virus etiológico del sarcoma de Kaposi:",
+      opciones:["VEB (VHH-4)","VIH","VHH-8","VPH-16"], correcta:2,
+      explicacion:"El sarcoma de Kaposi es causado por el virus del herpes humano 8 (VHH-8 / KSHV)." },
+
+    { id:"BOL-C114-02", capitulo:114, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Hombre de 38 años con VIH (CD4 90 céls/μL, no en TARV), placas violáceas alargadas en planta del pie y mucosa oral, edema linfedematoso en pierna. Diagnóstico y manejo inicial más razonable:",
+      opciones:[
+        "Sarcoma de Kaposi epidémico (asociado a SIDA) — iniciar/optimizar TARV; valorar quimioterapia local o sistémica (doxorrubicina liposomal) según extensión",
+        "Angiosarcoma cutáneo — cirugía amplia con margen 2 cm",
+        "Eritema multiforme — corticoides sistémicos",
+        "Granuloma piógeno múltiple — extirpación con láser"
+      ], correcta:0,
+      explicacion:"Lesiones violáceas + linfedema + VIH avanzado = Kaposi epidémico. El pilar del tratamiento es la TARV (mejora inmunológica); en formas extensas: doxorrubicina liposomal o paclitaxel sistémicos." },
+
+    /* ─── CAP 115 — CARCINOMA DE MERKEL (Tema 73) ─── */
+    { id:"BOL-C115-01", capitulo:115, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"El carcinoma de células de Merkel se asocia a infección por:",
+      opciones:["VPH-16","Poliomavirus de células de Merkel (MCPyV)","VHH-8","EBV"], correcta:1,
+      explicacion:"Cap. 115: el poliomavirus de células de Merkel (MCPyV) está integrado clonalmente en ~80% de los carcinomas de Merkel." },
+
+    { id:"BOL-C115-02", capitulo:115, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 78 años, inmunosuprimida (trasplante renal), nódulo rojo violáceo de crecimiento rápido (3 semanas) de 2 cm en mejilla, asintomático. Regla mnemotécnica AEIOU sugiere:",
+      opciones:[
+        "Carcinoma basocelular pigmentado",
+        "Carcinoma de células de Merkel (Asymptomatic, Expanding rapidly, Immunosuppressed, Older than 50, UV-exposed site)",
+        "Linfoma cutáneo B",
+        "Quiste epidermoide infectado"
+      ], correcta:1,
+      explicacion:"AEIOU del carcinoma de Merkel: Asintomático, Expansión rápida, Inmunosupresión, Older (> 50 años), UV-expuesto. Tratamiento: escisión amplia + radioterapia adyuvante; avelumab (anti-PD-L1) en enfermedad avanzada." },
+
+    /* ─── CAP 118 — MASTOCITOSIS (Tema 74) ─── */
+    { id:"BOL-C118-01", capitulo:118, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Forma más frecuente de mastocitosis cutánea en niños:",
+      opciones:["Urticaria pigmentosa (maculopapular)","Mastocitosis sistémica indolente","Leucemia mastocítica","Sarcoma mastocítico"], correcta:0,
+      explicacion:"Tabla 118-1: la urticaria pigmentosa (maculopapular) es la forma más frecuente de mastocitosis cutánea, especialmente en niños. La mastocitosis de inicio en la infancia suele resolverse antes de la adolescencia (~50-70%)." },
+
+    { id:"BOL-C118-02", capitulo:118, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Signo clínico clásico de la mastocitosis cutánea que aparece al frotar suavemente una lesión:",
+      opciones:["Signo de Auspitz","Signo de Darier (eritema, edema y prurito por desgranulación de mastocitos)","Signo de Nikolsky","Signo de Crowe"], correcta:1,
+      explicacion:"El signo de Darier (eritema, edema, habón y prurito tras frotar) es patognomónico de mastocitosis: el rascado provoca desgranulación local de mastocitos." },
+
+    { id:"BOL-C118-03", capitulo:118, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap118_mastocitosis",
+      enunciado:"CASO CLÍNICO: Hombre de 55 años con triptasa sérica 80 ng/mL persistente, dolor abdominal, hepatomegalia, biopsia ósea con infiltrados densos de mastocitos CD25+ con mutación KIT D816V. Según la figura de supervivencia del cap. 118, el subtipo y pronóstico esperado son:",
+      opciones:[
+        "MSI (mastocitosis sistémica indolente) — supervivencia similar a población general",
+        "MSA (mastocitosis sistémica agresiva) — supervivencia significativamente reducida",
+        "Mastocitosis cutánea aislada — resolución espontánea",
+        "Reacción alérgica a fármacos"
+      ], correcta:1,
+      explicacion:"Triptasa muy elevada, hepatomegalia, daño orgánico = mastocitosis sistémica agresiva (MSA). La figura 118-1 muestra supervivencia notablemente reducida vs MSI. La mutación KIT D816V está presente en > 90% de los casos." },
+
+    { id:"BOL-C118-04", capitulo:118, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Criterio MAYOR de la OMS para el diagnóstico de mastocitosis SISTÉMICA:",
+      opciones:[
+        "Triptasa > 20 ng/mL persistente",
+        "Infiltrados densos multifocales de mastocitos (≥ 15 agregados) en médula ósea o tejidos extracutáneos",
+        "Mutación KIT D816V",
+        "Expresión de CD25 o CD2"
+      ], correcta:1,
+      explicacion:"Tabla 118-2: criterio MAYOR = agregados multifocales densos ≥ 15 mastocitos en MO/extracutáneos. Triptasa > 20, KIT D816V y CD25/CD2 son criterios MENORES (se requiere el mayor + 1 menor o 3 menores)." },
+
+    /* ─── CAP 120 — LINFOMA CUTÁNEO DE LINFOCITOS T (Tema 67) ─── */
+    { id:"BOL-C120-01", capitulo:120, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Forma MÁS FRECUENTE de linfoma cutáneo de células T (LCCT):",
+      opciones:["Síndrome de Sézary","Micosis fungoide","Linfoma anaplásico de células grandes","Linfoma NK/T extraganglionar"], correcta:1,
+      explicacion:"Cap. 120: micosis fungoide (MF) y variantes representan ~65% de los LCCT. El síndrome de Sézary es la variante leucémica/eritrodérmica de la MF." },
+
+    { id:"BOL-C120-02", capitulo:120, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"En el síndrome de Sézary, la célula tumoral CIRCULANTE característica tiene núcleo:",
+      opciones:["Lobulado bifásico","Cerebriforme (de Lutzner)","Hendido en herradura","Multinucleado tipo Reed-Sternberg"], correcta:1,
+      explicacion:"Las células de Sézary muestran núcleos cerebriformes (hendiduras profundas) — descritos por Lutzner en microscopía electrónica. Son linfocitos T CD4+." },
+
+    { id:"BOL-C120-03", capitulo:120, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Hombre de 62 años, prurito 4 años, parches eritematodescamativos en glúteos y muslos (zonas no fotoexpuestas), múltiples diagnósticos previos de «eccema» refractarios. Biopsia: infiltrado linfocitario en banda con epidermotropismo y microabscesos de Pautrier. Diagnóstico:",
+      opciones:[
+        "Dermatitis atópica del adulto",
+        "Psoriasis invertida",
+        "Micosis fungoide (estadio parches)",
+        "Pitiriasis rosada atípica"
+      ], correcta:2,
+      explicacion:"MF clásica: parches/placas en zonas no fotoexpuestas («pantalón de baño»), prurito, evolución crónica, refractaria a corticoides. Histología clásica: linfocitos T atípicos CD4+ con epidermotropismo y microabscesos de Pautrier." },
+
+    { id:"BOL-C120-04", capitulo:120, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"En la clasificación de la OMS-EORTC, la papulosis linfomatoide y el linfoma anaplásico de células grandes cutáneo (LACG) son trastornos linfoproliferativos CD30+ con buen pronóstico, distintos del LACG sistémico.",
+      respuesta:true,
+      explicacion:"Cap. 120: el espectro de trastornos linfoproliferativos CD30+ (papulosis linfomatoide + LACG cutáneo) representa ~25% de los LCCT. Pronóstico excelente. Importante diferenciar del LACG sistémico, que requiere quimioterapia." },
+
+    /* ─── CAP 125 — GLUCOCORTICOIDES (Tema relacionado) ─── */
+    { id:"BOL-C125-01", capitulo:125, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Glucocorticoide de elección para tratamiento a corto y largo plazo de la mayoría de las dermatosis sistémicas:",
+      opciones:["Prednisona","Dexametasona","Hidrocortisona","Betametasona"], correcta:0,
+      explicacion:"Cap. 125: la prednisona es el glucocorticoide de acción intermedia preferido por su disponibilidad, economía y posibilidad de pautas en días alternos." },
+
+    { id:"BOL-C125-02", capitulo:125, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Ventaja principal de la pauta de prednisona en DÍAS ALTERNOS para tratamientos prolongados:",
+      opciones:[
+        "Mayor eficacia antiinflamatoria",
+        "Permite la recuperación del eje hipotálamo-hipófisis-suprarrenal (HHS) y reduce efectos secundarios sin perder eficacia",
+        "Reduce el costo del tratamiento",
+        "Permite usar dosis más altas"
+      ], correcta:1,
+      explicacion:"Texto del cap. 125: los días alternos permiten recuperación del eje HHS, disminuyen el riesgo de detención del crecimiento, miopatía, HTA, infecciones, efectos neuropsiquiátricos, etc., sin pérdida significativa de eficacia." },
+
+    /* ─── CAP 127 — FÁRMACOS ANTIMICROBIANOS ─── */
+    { id:"BOL-C127-01", capitulo:127, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Antibiótico tópico de elección para erradicar el estado de portador nasofaríngeo de S. aureus:",
+      opciones:["Bacitracina","Mupirocina intranasal","Neomicina","Polimixina B"], correcta:1,
+      explicacion:"Cap. 127: la mupirocina intranasal está indicada para erradicar el estado de portador nasofaríngeo de S. aureus, particularmente en pacientes con infecciones cutáneas estafilocócicas recidivantes." },
+
+    { id:"BOL-C127-02", capitulo:127, nivel:"facil", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"La clindamicina tópica debería usarse con precaución en pacientes con antecedentes de enfermedad inflamatoria intestinal o colitis asociada a antibióticos.",
+      respuesta:true,
+      explicacion:"Cita literal del cap. 127. Aunque la absorción sistémica de clindamicina tópica es escasa, pueden producirse efectos adversos gastrointestinales en pacientes con EII." },
+
+    /* ─── CAP 129 — IMIQUIMOD Y OTROS TÓPICOS ─── */
+    { id:"BOL-C129-01", capitulo:129, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Mecanismo de acción del imiquimod:",
+      opciones:[
+        "Inhibe la timidilato sintetasa",
+        "Agonista del receptor TLR7 → activa células dendríticas → respuesta inmune Th1 e IFN-α/IL-12/IL-18",
+        "Inhibe ADN polimerasa viral",
+        "Bloquea el receptor de andrógenos cutáneo"
+      ], correcta:1,
+      explicacion:"Cap. 129: imiquimod estimula vías de respuesta inmunitaria innata y adaptativa mediante agonismo de TLR-7 (vía MyD88). Indicaciones aprobadas FDA: verrugas anogenitales, queratosis actínicas, CBC superficial." },
+
+    { id:"BOL-C129-02", capitulo:129, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 72 años con CBC superficial de 1,2 cm en pierna, fototipo II. Rechaza cirugía. Pauta correcta de imiquimod tópico aprobada:",
+      opciones:[
+        "Imiquimod 2.5% una vez al día durante 1 semana",
+        "Imiquimod 5% crema 5 veces por semana durante 6 semanas (eliminación aprox. 75%)",
+        "Imiquimod 5% una vez por mes durante 12 meses",
+        "Imiquimod 1% solo dos aplicaciones"
+      ], correcta:1,
+      explicacion:"Cap. 129: imiquimod 5% para CBC superficial — 5 veces/semana × 6 semanas, eliminación ~75%. Solo aprobado para CBC superficial < 2 cm en tronco, cuello y extremidades (no manos/pies)." },
+
+    /* ─── CAP 131 — INTERACCIONES FARMACOLÓGICAS ─── */
+    { id:"BOL-C131-01", capitulo:131, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Factor de riesgo del PACIENTE para sufrir interacciones farmacológicas significativas (tabla 131-1):",
+      opciones:[
+        "Edad media (40-50 años)",
+        "Sexo masculino exclusivamente",
+        "Polifarmacia, edades extremas, disfunción de órganos mayores, comorbilidades múltiples",
+        "Dieta vegetariana"
+      ], correcta:2,
+      explicacion:"Tabla 131-1: polifarmacia, sexo femenino, edades extremas (muy joven o anciano), disfunción hepática/renal/IC, obesidad, hipotiroidismo, factores genéticos (TPMT, CYP2D6)." },
+
+    /* ─── CAP 138 — CRIOCIRUGÍA ─── */
+    { id:"BOL-C138-01", capitulo:138, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Efecto adverso ESPERADO inmediato tras criocirugía con nitrógeno líquido:",
+      opciones:[
+        "Hemorragia masiva",
+        "Edema y exudación durante 24-48 h; reacción urticarial inmediata; ampolla a las pocas horas",
+        "Necrosis muscular profunda",
+        "Hiperpigmentación permanente inmediata"
+      ], correcta:1,
+      explicacion:"Tabla 138-7: efectos adversos esperados incluyen exudación (horas-días), dolor durante la descongelación, reacción urticarial inmediata, edema (12-24 h), ampolla, escara." },
+
+    /* ─── CAP 141 — BIOLOGÍA DE LA CICATRIZACIÓN (Tema 76) ─── */
+    { id:"BOL-C141-01", capitulo:141, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap141_cicatrizacion",
+      enunciado:"Primer tipo celular en llegar al lecho de una herida y liberar mediadores vasoactivos, PDGF, TGF-β1, VEGF:",
+      opciones:["Macrófagos M2","Plaquetas","Neutrófilos","Fibroblastos"], correcta:1,
+      explicacion:"Fig. 141: las plaquetas son las primeras en llegar al lecho de la herida; liberan mediadores vasoactivos, PDGF, TGF-β1, VEGF, HGF, IGF-1 → desencadenan la cascada inflamatoria y reparativa." },
+
+    { id:"BOL-C141-02", capitulo:141, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"En la reepitelización del lecho de una herida, los queratinocitos del borde de la herida sufren:",
+      opciones:[
+        "Apoptosis masiva",
+        "Cambio fenotípico y funcional: separación de hemidesmosomas, sustitución de receptores de unión al colágeno por integrinas, migración y proliferación",
+        "Transformación maligna",
+        "Quiescencia prolongada"
+      ], correcta:1,
+      explicacion:"Cap. 141: queratinocitos del borde se activan, separan hemidesmosomas, cambian sus receptores de unión al colágeno por nuevas integrinas, migran y proliferan. Las queratinas K6 y K16 son marcadores clásicos de queratinocitos activados." },
+
+    /* ─── CAP 142 — ANATOMÍA QUIRÚRGICA (Tema 77) ─── */
+    { id:"BOL-C142-01", capitulo:142, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap142_musculos",
+      enunciado:"Músculo principal responsable de las arrugas glabelares («fruncir el ceño»):",
+      opciones:["Frontal","Corrugador de la ceja + prócer","Orbicular de los ojos","Risorio"], correcta:1,
+      explicacion:"Las arrugas glabelares son producidas por la contracción del músculo corrugador (movimiento medial de las cejas) + músculo prócer (depresor de cejas). Estos son los dianas clásicas de la toxina botulínica para arrugas glabelares." },
+
+    { id:"BOL-C142-02", capitulo:142, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Tras escisión de CBC en mejilla, paciente presenta debilidad de los músculos de la expresión facial homolateral. La lesión más probable ha afectado:",
+      opciones:[
+        "Nervio supraorbitario (V1)",
+        "Rama bucal o cigomática del nervio facial (VII)",
+        "Nervio mentoniano (V3)",
+        "Nervio auriculotemporal"
+      ], correcta:1,
+      explicacion:"El nervio facial (VII) inerva la musculatura mímica facial. Sus ramas (temporal, cigomática, bucal, mandibular, cervical) son vulnerables en cirugía cutánea facial. La rama cigomática y bucal son las más comprometidas en cirugía de mejilla." },
+
+    /* ─── CAP 143 — ANESTESIA ─── */
+    { id:"BOL-C143-01", capitulo:143, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Dosis máxima recomendada de LIDOCAÍNA al 1% con adrenalina 1:100.000 para una persona de 70 kg:",
+      opciones:["100 mg (10 mL)","350 mg (35 mL)","500 mg (50 mL)","700 mg (70 mL)"], correcta:2,
+      explicacion:"Tabla 143-1: lidocaína máxima sola 300 mg; con adrenalina 500 mg (diluir a 3.500) para 70 kg. Adrenalina aumenta la duración y reduce la absorción sistémica." },
+
+    { id:"BOL-C143-02", capitulo:143, nivel:"medio", tipo:"verdadero_falso", fuente:"bolognia",
+      enunciado:"Está contraindicado usar adrenalina en anestésicos locales para los dedos por riesgo de necrosis isquémica.",
+      respuesta:false,
+      explicacion:"Falso. Texto del cap. 143: «No hay evidencias de necrosis de los dedos debida únicamente a lidocaína con adrenalina en formulaciones comercializadas». La afirmación clásica ha sido refutada con estudios recientes. Sin embargo, debe evitarse en pacientes con arteriopatía periférica grave." },
+
+    /* ─── CAP 147 — COLGAJOS ─── */
+    { id:"BOL-C147-01", capitulo:147, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap147_colgajo",
+      enunciado:"En la imagen se observa un colgajo nasal de transposición tras escisión de CBC. El elemento del colgajo cuya función es VASCULAR es:",
+      opciones:[
+        "Cuerpo: la piel transferida",
+        "Pedículo: conducto de irrigación que mantiene la vascularización",
+        "Defecto primario: el área a reconstruir",
+        "Vector de tensión: dirección de la fuerza"
+      ], correcta:1,
+      explicacion:"Tabla 147-2: el pedículo (también llamado base vascular) es el conducto de irrigación que se mantiene intacto y se encarga de la vascularización del cuerpo del colgajo durante todo el procedimiento." },
+
+    { id:"BOL-C147-02", capitulo:147, nivel:"dificil", tipo:"asociacion", fuente:"bolognia",
+      enunciado:"Asocie cada tipo de colgajo con su característica principal (tabla 147-3):",
+      pares:[
+        { item:"Colgajos de avance con triángulos de Burow",     pareja:"Desplazamiento dependiente de la elasticidad tisular" },
+        { item:"Colgajos de transposición rómbica (Limberg)",    pareja:"Reorientación tisular: ganancia direccional en la dirección del déficit de tejido" },
+        { item:"Colgajos de interpolación (frontal, nasolabial)", pareja:"Importación de tejido de un sitio distante; colgajos en dos etapas" },
+        { item:"Colgajos pediculados en isla",                    pareja:"Aporte vascular limitado por pedículo subcutáneo" }
+      ],
+      explicacion:"Tabla 147-3 — Clasificación de los colgajos por mecanismo de movimiento y características de diseño." },
+
+    /* ─── CAP 159 — TOXINA BOTULÍNICA (Tema 79) ─── */
+    { id:"BOL-C159-01", capitulo:159, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia", imagen:"cap159_toxina",
+      enunciado:"En la imagen se muestra el resultado de toxina botulínica para arrugas glabelares (entrecejo). El número actual de sitios de inyección recomendados es:",
+      opciones:["1 sitio único central","3 sitios","5 sitios (incluyen pirámide nasal y depresor superciliar)","12 sitios distribuidos"], correcta:2,
+      explicacion:"Cap. 159: actualmente los autores utilizan cinco sitios de inyección para arrugas glabelares — pirámide nasal de la nariz, depresor superciliar, y músculos corrugador (3 puntos). La inyección en línea pupilar media omite el riesgo de ptosis de la ceja." },
+
+    { id:"BOL-C159-02", capitulo:159, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Duración promedio del efecto estético de la toxina botulínica A en músculos faciales:",
+      opciones:["1 semana","1 mes","3-4 meses (puede durar 6 meses o más)","2 años"], correcta:2,
+      explicacion:"Cap. 159: el efecto de BoNT-A se manifiesta en 1-2 días y es obvio durante 3-4 meses, aunque puede durar 6 meses o más. Inyecciones repetidas pueden prolongar este efecto." },
+
+    { id:"BOL-C159-03", capitulo:159, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 45 años se trata con toxina botulínica para arrugas glabelares. A los 7 días presenta ptosis de la ceja izquierda. Causa más probable:",
+      opciones:[
+        "Reacción alérgica al producto",
+        "Difusión del producto al músculo frontal (elevador de la ceja) tras inyección en línea pupilar media",
+        "Sobredosis sistémica",
+        "Resistencia inmunológica al fármaco"
+      ], correcta:1,
+      explicacion:"La ptosis de ceja es el efecto adverso más común; ocurre por difusión inadvertida al frontal (que es el principal elevador de la ceja). Por eso las inyecciones deben mantenerse a ≥ 2 cm por encima del reborde orbitario y en la línea pupilar media." },
+
+    /* ─── CASOS CLÍNICOS INTEGRADOS ─── */
+    { id:"BOL-CASO-01", capitulo:113, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO INTEGRADO: Hombre de 58 años, fototipo II, melanoma maligno en dorso (Breslow 3.2 mm, ulcerado), BRAF V600E positivo, ganglio centinela positivo, sin metástasis a distancia. Estadio AJCC IIIB. ¿Cuál es la opción terapéutica adyuvante más adecuada?",
+      opciones:[
+        "Observación clínica únicamente",
+        "Interferón α a altas dosis durante 1 año",
+        "Terapia adyuvante con inhibidor de BRAF/MEK (dabrafenib + trametinib) o anti-PD-1 (pembrolizumab/nivolumab)",
+        "Quimioterapia con dacarbazina"
+      ], correcta:2,
+      explicacion:"Estadio III BRAF+: dabrafenib + trametinib o anti-PD-1 son las opciones adyuvantes estándar actuales (mejoran supervivencia libre de recidiva). El interferón ya no es estándar. La quimioterapia clásica tampoco ha demostrado beneficio adyuvante." },
+
+    { id:"BOL-CASO-02", capitulo:108, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 70 años con CBC nodular de 2 cm en ala nasal. Pruebas de imagen sin invasión profunda. ¿Tratamiento de elección considerando localización?",
+      opciones:[
+        "Curetaje y electrocoagulación",
+        "Imiquimod tópico 6 semanas",
+        "Cirugía micrográfica de Mohs (mejor preservación tisular y control de márgenes en zona crítica)",
+        "Radioterapia primaria"
+      ], correcta:2,
+      explicacion:"Cirugía de Mohs es de elección en zonas de alto riesgo (zona H facial: nariz, párpados, orejas, labios), tumores recurrentes, agresivos, o > 2 cm. Permite control histológico de márgenes con máxima preservación tisular." },
+
+    { id:"BOL-CASO-03", capitulo:120, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Hombre de 68 años con eritrodermia generalizada, prurito intenso, linfadenopatía generalizada, > 1000 células de Sézary/mm³ en sangre. Diagnóstico y manejo:",
+      opciones:[
+        "Pénfigo foliáceo — corticoides sistémicos",
+        "Síndrome de Sézary (estadio IV de LCCT) — fotoféresis extracorpórea + bexaroteno o mogamulizumab",
+        "Eritrodermia psoriásica — ciclosporina",
+        "Reacción medicamentosa generalizada — suspender fármacos"
+      ], correcta:1,
+      explicacion:"Síndrome de Sézary: tríada de eritrodermia + linfadenopatía + > 1000 Sézary/mm³ en sangre. Tratamiento: fotoféresis extracorpórea ± bexaroteno, IFN-α; mogamulizumab (anti-CCR4) aprobado más recientemente. Pronóstico reservado." },
+
+    { id:"BOL-CASO-04", capitulo:118, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Lactante de 18 meses con múltiples máculas hiperpigmentadas en tronco que se urtican al frotarlas. Sin afectación sistémica. Conducta y pronóstico:",
+      opciones:[
+        "Biopsia urgente + estudio de médula ósea",
+        "Mastocitosis cutánea (urticaria pigmentosa); pronóstico bueno, regresión espontánea esperable en ~50-70% antes de la adolescencia; evitar desencadenantes (calor, AINE, opiáceos)",
+        "Inicio inmediato de imatinib",
+        "Trasplante de médula ósea"
+      ], correcta:1,
+      explicacion:"Mastocitosis cutánea infantil con signo de Darier positivo. Pronóstico favorable: la mayoría resuelve antes de la adolescencia. Manejo: educación sobre desencadenantes (calor, AINE, contrastes radiológicos, anestésicos, picaduras), antihistamínicos H1 según necesidad. Solo estudio sistémico si síntomas/triptasa elevada." },
+
+    /* ═══════════════════════════════════════════════════════
+     *  CASOS CLÍNICOS ADICIONALES — TEMARIO COMPLETO
+     *  Llenar lagunas en temas oficiales con casos prácticos
+     * ═══════════════════════════════════════════════════════ */
+
+    /* ─── TEMA 4: INMUNOLOGÍA DE LA PIEL (Cap 4) ─── */
+    { id:"BOL-C4-01", capitulo:4, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Principal célula presentadora de antígenos en la epidermis:",
+      opciones:["Queratinocito basal","Célula de Langerhans","Melanocito","Célula de Merkel"], correcta:1,
+      explicacion:"Las células de Langerhans son las CPA dendríticas profesionales de la epidermis (CD1a+, langerina+). Captan antígenos, migran a ganglios y los presentan a linfocitos T." },
+
+    { id:"BOL-C4-02", capitulo:4, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Citocina clave en la respuesta Th17, blanco terapéutico en psoriasis (secukinumab, ixekizumab):",
+      opciones:["IL-4","IL-17A","IL-13","TGF-β"], correcta:1,
+      explicacion:"La vía IL-23/IL-17 es central en la psoriasis. Secukinumab e ixekizumab bloquean IL-17A; brodalumab bloquea el receptor de IL-17. Guselkumab y risankizumab bloquean IL-23p19." },
+
+    /* ─── TEMA 5: PRURITO (Cap 7) ─── */
+    { id:"BOL-C7-01", capitulo:7, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Hombre de 68 años consulta por prurito generalizado intenso sin lesiones cutáneas primarias evidentes durante 6 meses. La PRIMERA aproximación etiológica debe descartar:",
+      opciones:[
+        "Solo dermatosis con prurito",
+        "Causas sistémicas: hepatopatía colestásica, ERC, hipertiroidismo, anemia ferropénica, linfoma/policitemia, fármacos, VIH",
+        "Síndrome ansioso únicamente",
+        "Liquen simple crónico exclusivamente"
+      ], correcta:1,
+      explicacion:"Prurito generalizado sin lesiones primarias en > 65 años obliga a buscar causa sistémica: hepatobiliar (colestasis), ERC, hematológica (linfoma de Hodgkin, policitemia vera), endocrina, neurológica, psicógena, fármacos. Estudio inicial: hemograma, función renal/hepática, TSH, ferritina, LDH, VIH." },
+
+    { id:"BOL-C7-02", capitulo:7, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Tratamiento de primera línea del prurito asociado a insuficiencia renal crónica:",
+      opciones:[
+        "Antihistamínicos H1 sedantes solos",
+        "UVB de banda estrecha (NB-UVB) y/o gabapentina/pregabalina",
+        "Corticoides tópicos de alta potencia",
+        "Naltrexona iv"
+      ], correcta:1,
+      explicacion:"En prurito urémico: optimizar diálisis, NB-UVB, gabapentina/pregabalina (3 dosis post-diálisis). Antihistamínicos suelen ser poco eficaces (no es histamina-mediado)." },
+
+    /* ─── TEMA 8: PITIRIASIS ROSADA (Cap 9) ─── */
+    { id:"BOL-C9-01", capitulo:9, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Signo clásico que precede al exantema generalizado en la pitiriasis rosada:",
+      opciones:["Mancha heráldica (placa madre)","Signo de Nikolsky","Signo de Auspitz","Estrías de Wickham"], correcta:0,
+      explicacion:"La placa heráldica (placa madre): lesión ovalada rosada/asalmonada de 2-5 cm que precede 1-2 semanas al brote generalizado en tronco con patrón en árbol de Navidad." },
+
+    { id:"BOL-C9-02", capitulo:9, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 22 años con placas eritematodescamativas ovaladas en tronco siguiendo líneas de tensión cutánea («árbol de Navidad»), precedidas por una placa única más grande 10 días antes. Diagnóstico y manejo:",
+      opciones:[
+        "Tiña corporis — antifúngico oral",
+        "Sífilis secundaria — penicilina benzatínica IM",
+        "Pitiriasis rosada — observación, autorresolutiva en 6-8 semanas, fotoprotección, antihistamínicos si prurito",
+        "Psoriasis en gotas — fototerapia"
+      ], correcta:2,
+      explicacion:"Patrón clásico de pitiriasis rosada: placa heráldica + brote secundario en tronco. Asociada a reactivación VHH-6/7. Autolimitada (6-8 sem). Ddx: sífilis secundaria (serología si dudas), tiña, psoriasis guttata. Tratamiento sintomático." },
+
+    /* ─── TEMA 13: DCA (Cap 14) ─── */
+    { id:"BOL-C14-02", capitulo:14, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 35 años, peluquera, eccema crónico de manos refractario a corticoides. Prueba epicutánea +++ a parafenilendiamina (PPD). ¿Profesión-alérgeno y manejo?",
+      opciones:[
+        "DCA ocupacional a PPD (tintes capilares); evitar contacto, guantes nitrilo, considerar cambio de tareas; emolientes y corticoides tópicos en brotes",
+        "Dermatitis atópica recidivante; tacrolimus tópico indefinido",
+        "Psoriasis palmar; metotrexato oral",
+        "Eccema dishidrótico; PUVA local"
+      ], correcta:0,
+      explicacion:"DCA ocupacional. PPD: sensibilizante muy potente en tintes y henna negra. Manejo: evitar el alérgeno (clave), EPP adecuado (guantes nitrilo no látex), educación, emolientes, corticoides en brotes. Posible incapacidad laboral si refractaria." },
+
+    /* ─── TEMA 16: URTICARIA (Cap 18) ─── */
+    { id:"BOL-C18-02", capitulo:18, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 28 años con urticaria diaria de > 6 semanas, habones que duran < 24 h, sin desencadenante identificable, no respuesta a cetirizina 10 mg. Paso siguiente:",
+      opciones:[
+        "Biopsia cutánea urgente",
+        "Subir antihistamínicos H1 hasta 4 veces la dosis estándar (off-label, recomendado por guías)",
+        "Iniciar corticoides orales crónicos",
+        "Eliminación dietética estricta"
+      ], correcta:1,
+      explicacion:"Urticaria crónica espontánea. Algoritmo: 1) H1 antihistamínico segunda generación dosis estándar; 2) hasta 4× la dosis si refractaria; 3) añadir omalizumab; 4) ciclosporina. Corticoides solo en brotes cortos." },
+
+    /* ─── TEMA 23: DERMATOSIS DEL EMBARAZO (Cap 27) ─── */
+    { id:"BOL-C27-01", capitulo:27, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Embarazada de 32 semanas, primigesta, con pápulas y placas urticariformes en estrías abdominales (respetando ombligo), prurito intenso. Diagnóstico más probable:",
+      opciones:[
+        "Penfigoide gestacional",
+        "Erupción polimorfa del embarazo (PEP/PUPPP) — pápulas y placas urticariformes pruriginosas del embarazo",
+        "Colestasis intrahepática del embarazo",
+        "Erupción atópica del embarazo"
+      ], correcta:1,
+      explicacion:"PEP (antigua PUPPP): tercer trimestre en primigestas, inicia en estrías abdominales, respeta ombligo, prurito intenso. Benigno, sin riesgo fetal, resuelve postparto. Penfigoide gestacional sí afecta ombligo y tiene ampollas." },
+
+    { id:"BOL-C27-02", capitulo:27, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Embarazada de 34 semanas con prurito intenso en palmas y plantas, ictericia leve, ALT 200 U/L, ácidos biliares séricos 45 μmol/L. Diagnóstico y manejo:",
+      opciones:[
+        "Colestasis intrahepática del embarazo — ácido ursodesoxicólico + monitorización fetal estrecha + considerar parto a partir de la 36-37 sem",
+        "Penfigoide gestacional — corticoides sistémicos",
+        "Hepatitis viral aguda — antivirales",
+        "Erupción polimorfa del embarazo — antihistamínicos"
+      ], correcta:0,
+      explicacion:"CIE: prurito sin lesiones primarias + ácidos biliares ≥ 10 μmol/L. Riesgo fetal: prematuridad, sufrimiento fetal, muerte fetal súbita. Tratamiento: ácido ursodesoxicólico, vit K, parto programado 36-37 sem si ácidos biliares > 40." },
+
+    /* ─── TEMA 27: DERMATITIS HERPETIFORME (Cap 31) ─── */
+    { id:"BOL-C31-01", capitulo:31, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Hombre de 40 años con vesículas pruriginosas agrupadas en codos, rodillas y nalgas, IgA antitransglutaminasa tisular elevada. Diagnóstico:",
+      opciones:[
+        "Penfigoide ampolloso",
+        "Dermatitis herpetiforme (asociada a enfermedad celíaca)",
+        "Eccema dishidrótico",
+        "Escabiosis ampollosa"
+      ], correcta:1,
+      explicacion:"DH: vesículas/pápulas pruriginosas en superficies extensoras (codos, rodillas, glúteos), patrón herpetiforme agrupado. Asociada a enfermedad celíaca (>95% sensibilidad anti-transglutaminasa). Histología: ampolla subepidérmica con neutrófilos en papilas. IFD: IgA granular en papilas dérmicas." },
+
+    { id:"BOL-C31-02", capitulo:31, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Tratamiento de PRIMERA línea para alivio sintomático rápido de la dermatitis herpetiforme:",
+      opciones:["Prednisona oral","Dapsona (mejoría en 24-48 h)","Hidroxicloroquina","Metotrexato"], correcta:1,
+      explicacion:"Dapsona produce alivio sintomático espectacular en 24-48 h (efecto antineutrofílico). El tratamiento DEFINITIVO es la dieta sin gluten estricta (única que normaliza histología/inmunopatología y previene complicaciones celíacas)." },
+
+    /* ─── TEMA 44: TRASTORNOS UNGUEALES (Cap 73) ─── */
+    { id:"BOL-C73-01", capitulo:73, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Hallazgo ungueal MÁS específico de psoriasis ungueal:",
+      opciones:[
+        "Onicolisis (única)",
+        "Pitting (depresiones puntiformes) + mancha de aceite + hiperqueratosis subungueal",
+        "Líneas de Beau",
+        "Melanoniquia longitudinal"
+      ], correcta:1,
+      explicacion:"Tríada clásica psoriasis ungueal: pitting matricial + mancha de aceite (mácula amarilla-marrón del lecho) + hiperqueratosis subungueal + onicolisis. Hemorragias en astilla también frecuentes." },
+
+    { id:"BOL-C73-02", capitulo:73, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 55 años con banda pigmentada longitudinal marrón-negra de 4 mm en lámina ungueal del pulgar, con extensión proximal al pliegue (signo de Hutchinson). Diagnóstico más probable y manejo:",
+      opciones:[
+        "Hematoma subungueal — observación",
+        "Melanoma subungueal — biopsia matricial urgente",
+        "Melanoniquia étnica benigna — fotoprotección",
+        "Onicomicosis — terbinafina"
+      ], correcta:1,
+      explicacion:"Signo de Hutchinson positivo (pigmento se extiende al pliegue periungueal) = sospecha de melanoma subungueal hasta demostrar lo contrario. Banda > 3 mm, asimétrica, monodactilar en adulto. Biopsia matricial es obligatoria." },
+
+    /* ─── TEMA 49: VIH (Cap 83) ─── */
+    { id:"BOL-C83-01", capitulo:83, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Paciente VIH+ con CD4 < 100, presenta pápulas umbilicadas en cara con material caseoso central. Diagnóstico más probable:",
+      opciones:[
+        "Molluscum contagioso atípico",
+        "Criptococosis cutánea diseminada (pápulas que simulan molluscum) o histoplasmosis",
+        "Verrugas víricas",
+        "Acné quístico"
+      ], correcta:1,
+      explicacion:"En VIH avanzado, pápulas tipo molluscum en cara obligan a descartar micosis profundas diseminadas (criptococosis, histoplasmosis, peniciliosis/talaromicosis). Biopsia + cultivo. Diferencia: molluscum común es asintomático; las micosis suelen tener fiebre y afectación sistémica." },
+
+    /* ─── TEMA 50: VPH (Cap 82) ─── */
+    { id:"BOL-C82-01", capitulo:82, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Tipos de VPH oncogénicos de ALTO riesgo asociados a cáncer cervical y anogenital:",
+      opciones:["VPH 1, 4","VPH 6, 11","VPH 16, 18 (y otros como 31, 33, 45)","VPH 2, 27"], correcta:2,
+      explicacion:"Alto riesgo: VPH 16, 18, 31, 33, 35, 45, 52, 58 (CIN, cáncer cervical, anal, orofaríngeo). Bajo riesgo: VPH 6, 11 (verrugas anogenitales/condilomas, papilomas laríngeos). Vacuna nonavalente cubre 6, 11, 16, 18, 31, 33, 45, 52, 58." },
+
+    /* ─── TEMA 54: LEISHMANIASIS (Cap 84) — IMPORTANTE COSTA RICA ─── */
+    { id:"BOL-C84-01", capitulo:84, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Hombre 32 años, costarricense, trabaja en zona rural de Limón. Úlcera de 2 cm en antebrazo, bordes sobreelevados indurados, evolución 6 semanas tras picadura de mosca de la arena (Lutzomyia). Diagnóstico y agente más probable en Costa Rica:",
+      opciones:[
+        "Leishmaniasis cutánea por Leishmania panamensis (especie más común en Costa Rica)",
+        "Esporotricosis cutánea",
+        "Carbunco cutáneo",
+        "Tuberculosis cutánea"
+      ], correcta:0,
+      explicacion:"En Costa Rica, la leishmaniasis cutánea es endémica; el agente principal es L. panamensis (otras: L. mexicana, L. braziliensis). Vector: Lutzomyia. Diagnóstico: frotis con tinción Giemsa (amastigotes), cultivo, PCR. Tratamiento: antimoniales pentavalentes (Glucantime®) o miltefosina oral." },
+
+    { id:"BOL-C84-02", capitulo:84, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Especie de Leishmania con MAYOR riesgo de leishmaniasis mucocutánea (espundia) tardía:",
+      opciones:["L. donovani","L. (Viannia) braziliensis","L. tropica","L. major"], correcta:1,
+      explicacion:"L. braziliensis (complejo Viannia) tiene tropismo mucoso y puede causar espundia (compromiso destructivo de mucosa nasal/orofaríngea) años después de la lesión cutánea primaria. Riesgo de hasta 5-10% en pacientes no tratados adecuadamente." },
+
+    /* ─── TEMA 55: ESCABIOSIS (Cap 86) ─── */
+    { id:"BOL-C86-01", capitulo:86, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Familia con prurito generalizado nocturno, pápulas y túneles en pliegues interdigitales y muñecas. Tratamiento de elección:",
+      opciones:[
+        "Corticoide tópico potente solo",
+        "Permetrina 5% crema toda la familia (incluso asintomáticos) en una sola noche, repetir a la semana; lavar ropa de cama 60°C",
+        "Antihistamínicos H1 únicamente",
+        "Antibiótico oral"
+      ], correcta:1,
+      explicacion:"Sarna por Sarcoptes scabiei. Tratamiento: permetrina 5% toda la familia/contactos, repetir en 1 semana. Alternativa: ivermectina oral 200 μg/kg días 1 y 14. Lavar ropa/cama a 60°C o aislar 72 h en bolsa. El prurito puede persistir semanas tras curación." },
+
+    { id:"BOL-C86-02", capitulo:86, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Anciano en residencia con costras hiperqueratósicas gruesas en manos/pies, abundantes ácaros en raspado, contagioso entre residentes. Diagnóstico:",
+      opciones:[
+        "Sarna noruega (costrosa, hiperqueratósica) — hiperinfestación en inmunodeprimidos/ancianos",
+        "Psoriasis palmoplantar",
+        "Eccema crónico de manos",
+        "Tinea manuum"
+      ], correcta:0,
+      explicacion:"Sarna noruega/costrosa: hiperinfestación con miles-millones de ácaros, costras hiperqueratósicas, muy contagiosa. Frecuente en inmunodeprimidos, ancianos, demencia. Tratamiento: ivermectina oral repetida (días 1, 2, 8, 9, 15) + permetrina + queratolíticos." },
+
+    /* ─── TEMA 59: ERITEMA NUDOSO (Cap 21/100) ─── */
+    { id:"BOL-C21-01", capitulo:21, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 28 años con nódulos eritematosos dolorosos en cara anterior de ambas piernas, fiebre baja, artralgias. ANA negativos, ASLO elevado. Diagnóstico y causa más probable:",
+      opciones:[
+        "Eritema nudoso post-estreptocócico (causa más frecuente en adultos jóvenes)",
+        "Vasculitis nodular",
+        "Lupus profundo",
+        "Tromboflebitis migratoria"
+      ], correcta:0,
+      explicacion:"Eritema nudoso: paniculitis septal aguda. Causas: infecciones (estreptococo más frecuente, TBC, Yersinia), sarcoidosis, EII, embarazo, fármacos (anticonceptivos, sulfas), idiopático. Manejo: AINE, reposo, tratar causa subyacente. Autolimitada 6-8 sem." },
+
+    /* ─── TEMA 60: ÚLCERAS VASCULARES (Cap 106) ─── */
+    { id:"BOL-C106-01", capitulo:106, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 70 años, obesa, varices crónicas, úlcera de 3 cm en cara medial supramaleolar, bordes irregulares, lecho fibrinoso, edema y dermatitis ocre alrededor. Diagnóstico y manejo:",
+      opciones:[
+        "Úlcera arterial — revascularización urgente",
+        "Úlcera venosa (insuficiencia venosa crónica) — compresión 30-40 mmHg, curas húmedas, elevar miembro, considerar pentoxifilina",
+        "Úlcera neuropática diabética — descarga total",
+        "Úlcera hipertensiva de Martorell — corticoides"
+      ], correcta:1,
+      explicacion:"Localización maleolar medial + dermatitis ocre + varices + bordes irregulares = úlcera venosa (60-80% de las úlceras de pierna). Manejo: compresión multicapa o vendaje rígido (Unna), curas húmedas, tratar IVC (cirugía/escleroterapia)." },
+
+    { id:"BOL-C106-02", capitulo:106, nivel:"dificil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Hombre 65 años, HTA, fumador, úlcera dolorosa de inicio súbito en pierna lateral con bordes violáceos y patrón en sacabocados; ITB 0.4. Diagnóstico:",
+      opciones:[
+        "Úlcera venosa",
+        "Úlcera arterial isquémica (enfermedad arterial periférica grave)",
+        "Pioderma gangrenoso",
+        "Vasculitis livedoide"
+      ], correcta:1,
+      explicacion:"Úlcera arterial: localización lateral o distal, bordes nítidos en sacabocados, lecho seco/necrótico, dolor intenso especialmente nocturno, ITB < 0.5 = isquemia crítica. NO comprimir. Derivar a cirugía vascular para revascularización." },
+
+    /* ─── TEMA 75: BARRERA CUTÁNEA (Cap 124) ─── */
+    { id:"BOL-C124-01", capitulo:124, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Componente lipídico ESENCIAL del estrato córneo que forma las láminas intercelulares y es deficitario en dermatitis atópica:",
+      opciones:["Colesterol","Ceramidas","Ácidos grasos libres","Esfingomielina"], correcta:1,
+      explicacion:"Las ceramidas (esfingolípidos) son ~50% de los lípidos del estrato córneo y forman la barrera lamelar. Su déficit (junto al de filagrina/mutaciones) explica la xerosis y mayor permeabilidad en DA. Emolientes con ceramidas son útiles." },
+
+    /* ─── TEMA 38: DARIER / HAILEY-HAILEY (Cap 59) ─── */
+    { id:"BOL-C59-01", capitulo:59, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Hombre 30 años, AF padre afecto, con pápulas hiperqueratósicas malolientes en zonas seborreicas (V cervical, retroauricular, pliegues), uñas con bandas longitudinales rojas y blancas alternas, depresiones puntiformes palmares. Diagnóstico y gen mutado:",
+      opciones:[
+        "Hailey-Hailey (ATP2C1)",
+        "Enfermedad de Darier (ATP2A2, AD)",
+        "Pénfigo familiar",
+        "Acantosis nigricans"
+      ], correcta:1,
+      explicacion:"Darier (queratosis folicular): AD, mutación en ATP2A2 (bomba SERCA2). Pápulas queratósicas malolientes en seborreicas, uñas en V (red and white longitudinal bands con muescas distales), depresiones palmares, acrocianosis. Hailey-Hailey (ATP2C1): vesículas/erosiones en pliegues, sin afectación ungueal específica." },
+
+    /* ─── TEMA 68: LESIONES PRECANCEROSAS (Cap 110) ─── */
+    { id:"BOL-C110-01", capitulo:110, nivel:"facil", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"Riesgo de transformación maligna anual de UNA queratosis actínica a carcinoma epidermoide:",
+      opciones:["0,025-16% por lesión por año","30-50% por año","< 0,001% por año","Siempre maligniza"], correcta:0,
+      explicacion:"Estimaciones varían: 0,025-16% por lesión/año, pero con múltiples QA acumuladas el riesgo de desarrollar CE en algún punto es del 6-10% a 10 años. Por ello tratamiento de campo (5-FU, imiquimod, PDT, criocirugía) es estrategia clave." },
+
+    { id:"BOL-C110-02", capitulo:110, nivel:"medio", tipo:"opcion_multiple", fuente:"bolognia",
+      enunciado:"CASO CLÍNICO: Mujer de 75 años, fototipo II, múltiples máculas eritemato-escamosas ásperas en cara, dorso de manos y antebrazos. Tratamiento de CAMPO óptimo:",
+      opciones:[
+        "Criocirugía lesión por lesión solamente",
+        "5-fluorouracilo tópico al 5% × 2-4 semanas O imiquimod 3.75-5% O terapia fotodinámica (campo extenso)",
+        "Cirugía escisional de cada una",
+        "Solo fotoprotección sin tratamiento"
+      ], correcta:1,
+      explicacion:"Múltiples QA en zonas extensas = campo cancerizado. Tratamiento de campo: 5-FU tópico, imiquimod, diclofenaco gel 3%, mebutato de ingenol (retirado), PDT con MAL o ALA. Más fotoprotección permanente. Criocirugía individual para lesiones aisladas." }
 
   ]
 };
@@ -1541,4 +2187,3 @@ window.DERMAPREP_DATA.estadisticas = (() => {
   });
   return s;
 })();
-
