@@ -76,10 +76,44 @@ header.masthead{
   padding:10px 16px;background:var(--ink);color:var(--paper);border:0;
   font-family:'Inter',sans-serif;font-weight:600;font-size:12px;letter-spacing:.08em;
   cursor:pointer;border-radius:0;transition:background .15s;
-  display:flex;align-items:center;gap:6px;margin-left:8px
+  display:flex;align-items:center;gap:6px;margin-left:8px;
+  white-space:nowrap;
 }
 .h-progress-btn:hover{background:var(--accent)}
 .h-progress-btn span{font-size:14px}
+
+/* ═════ MOBILE HEADER ADAPTATION ═════ */
+@media (max-width:760px) {
+  header.masthead{padding:16px 18px 12px}
+  .masthead-inner{gap:14px}
+  .brand .kicker{font-size:9px;letter-spacing:.22em}
+  .brand h1{font-size:24px}
+  .brand .sub{font-size:11px}
+  .h-stats{
+    width:100%;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    padding-top:10px;
+    border-top:1px dashed rgba(0,0,0,.15);
+  }
+  .h-stat{text-align:center;flex:1;min-width:55px}
+  .h-stat .n{font-size:20px}
+  .h-stat .l{font-size:8.5px;letter-spacing:.12em}
+  .h-progress-btn{
+    margin-left:0;
+    flex:0 0 auto;
+    padding:8px 12px;
+    font-size:11px;
+  }
+  .h-progress-btn span{font-size:13px}
+}
+
+@media (max-width:420px) {
+  .h-progress-btn .h-progress-label{display:none}
+  .h-progress-btn{padding:8px 10px}
+  .h-progress-btn span{font-size:16px;margin:0}
+}
 
 /* ═════ PROGRESS VIEW ═════ */
 .progress-view{max-width:1100px;margin:0 auto;padding:32px 32px 80px}
@@ -142,6 +176,38 @@ header.masthead{
   cursor:pointer;border-radius:0;font-family:'Inter',sans-serif;transition:all .15s
 }
 .topic-card .study-btn:hover{background:var(--accent);color:#fff}
+
+/* ═════ MOBILE: topic cards stack ═════ */
+@media (max-width:760px) {
+  .topic-card{
+    grid-template-columns:1fr auto;
+    grid-template-rows:auto auto;
+    gap:8px 12px;
+    padding:10px 12px;
+  }
+  .topic-card .topic-info{grid-column:1 / 3;grid-row:1}
+  .topic-card .topic-info b{white-space:normal}
+  .topic-card .topic-stats{grid-column:1;grid-row:2;text-align:left}
+  .topic-card .topic-pct-bar{grid-column:2;grid-row:2;width:60px;justify-self:end}
+  .topic-card .topic-pct-text{grid-column:2;grid-row:2;display:none}
+  .topic-card .study-btn{
+    grid-column:1 / 3;grid-row:3;
+    width:100%;padding:9px;font-size:11px;
+    margin-top:4px
+  }
+  .progress-hero{flex-direction:column;align-items:stretch;gap:10px}
+  .progress-hero h2{font-size:22px}
+  .progress-hero .actions{justify-content:flex-start;flex-wrap:wrap;gap:6px}
+  .progress-hero .actions button{padding:8px 12px;font-size:10.5px;flex:1;min-width:0}
+  .prog-stat-card b{font-size:24px}
+  .prog-stat-card .lbl{font-size:9px}
+  .prog-quick-action{flex-direction:column;align-items:stretch;text-align:center;padding:16px 18px}
+  .prog-quick-action button{width:100%}
+  .history-row{grid-template-columns:1fr auto;gap:6px 10px;padding:8px 12px}
+  .history-row .date{grid-column:1;font-size:10.5px}
+  .history-row .det{grid-column:1 / 3;font-size:11px}
+  .history-row .pct{grid-column:2;grid-row:1;font-size:16px}
+}
 
 .empty-state{padding:30px;text-align:center;color:var(--muted);font-style:italic;font-size:13px;background:var(--paper-warm);border:1px dashed rgba(0,0,0,.15)}
 
@@ -370,6 +436,79 @@ header.masthead{
 .exam-head .progress .bar>div{height:100%;background:var(--accent);transition:width .3s}
 .exam-head .progress .txt{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--muted);font-weight:500}
 
+/* ═════ MOBILE: exam header & questions ═════ */
+@media (max-width:760px) {
+  .exam-head{padding:14px 16px;gap:10px}
+  .exam-head .info{flex:1;min-width:0;width:100%}
+  .exam-head .info h2{font-size:17px}
+  .exam-head .info p{font-size:11px}
+  .exam-head .timer{font-size:15px;padding:5px 10px;align-self:flex-start}
+  .exam-head .progress{align-items:flex-start;width:100%}
+  .exam-head .progress .bar{width:100%}
+  .q-card{padding:18px 16px}
+  .q-meta{flex-direction:column;align-items:flex-start;gap:8px}
+  .q-meta .left{flex:1;width:100%}
+  .q-tags{align-self:stretch;justify-content:flex-end}
+  .qno{font-size:24px}
+  .q-text{font-size:15px;line-height:1.45}
+  .opt{padding:10px 12px;font-size:13.5px;gap:8px}
+  .opt .letter{font-size:15px;flex:0 0 18px}
+  .opt.selected,.opt.correct,.opt.incorrect{padding:9px 11px}
+  .tf-opts .opt{padding:14px;font-size:15px}
+  .assoc-row{grid-template-columns:1fr;gap:4px;padding:8px 0}
+  .assoc-row .arrow{display:none}
+  .assoc-row .item{font-size:12.5px}
+  .assoc-row select{font-size:12px;padding:6px 8px}
+  .exam-nav{gap:8px}
+  .exam-nav button{padding:11px 16px;font-size:11px;flex:1;letter-spacing:.1em}
+  .summary{padding:24px 20px}
+  .summary h2{font-size:20px}
+  .summary .score{font-size:64px}
+  .summary .verdict{font-size:12px}
+  .summary-grid{gap:14px;padding-top:18px}
+  .summary-grid div b{font-size:20px}
+  .summary-actions button{padding:11px 16px;font-size:11px;flex:1;min-width:120px}
+  .topic-perf-list{max-height:none}
+  .topic-row{grid-template-columns:1fr auto;gap:6px}
+  .topic-row .topic-bar{width:60px}
+  .topic-row .topic-pct{font-size:10.5px}
+}
+
+/* ═════ MOBILE: home configurator ═════ */
+@media (max-width:760px) {
+  .welcome-hero{margin-bottom:24px;padding:18px 0}
+  .welcome-hero .badge{font-size:9px;padding:4px 10px}
+  .welcome-hero h2{font-size:24px}
+  .welcome-hero p{font-size:13.5px}
+  .modes{grid-template-columns:1fr;gap:10px;margin-bottom:24px}
+  .mode-card{padding:14px 16px}
+  .mode-card .ico{font-size:24px;margin-bottom:4px}
+  .mode-card h3{font-size:16px}
+  .mode-card p{font-size:12px}
+  .summary-row{flex-wrap:wrap}
+  .summary-row .summary-cell{flex:1 1 33%;border-bottom:1px solid rgba(0,0,0,.1);padding:10px 4px}
+  .summary-row .summary-cell:nth-child(n+4){border-bottom:0}
+  .summary-cell .n{font-size:18px}
+  .summary-cell .l{font-size:8.5px;letter-spacing:.08em}
+  .config-panel{padding:18px 16px;gap:18px}
+  .config-panel::before,.config-panel::after{width:32px;height:32px}
+  .cfg-section h3{font-size:10px;letter-spacing:.16em}
+  .num-presets{grid-template-columns:repeat(5,1fr);gap:4px}
+  .num-presets button{padding:8px 2px;font-size:14px}
+  .qbtns{grid-template-columns:repeat(2,1fr);gap:5px}
+  .qbtns button{padding:8px 4px;font-size:11px}
+  .source-row{gap:5px}
+  .src-pill{padding:5px 10px;font-size:10.5px}
+  .diff-block label{font-size:11px}
+  .chapter-tree{max-height:280px}
+  .sec-title{font-size:12px;padding:4px 0}
+  .cap-item{font-size:11.5px;padding:2px 0}
+  .cap-item label{line-height:1.3}
+  .cap-item label .num{font-size:9px;margin-right:3px}
+  .go-btn{padding:14px;font-size:11.5px;letter-spacing:.14em}
+  .go-btn small{font-size:9.5px}
+}
+
 /* Question card */
 .q-card{
   background:#fff;border:1px solid var(--ink);padding:26px 28px;margin-bottom:16px;
@@ -589,7 +728,7 @@ footer.foot a:hover{text-decoration:underline}
       <div class="h-stat"><div class="n" id="hStatCh">—</div><div class="l">Capítulos</div></div>
       <div class="h-stat"><div class="n" id="hStatImg">—</div><div class="l">Figuras</div></div>
       <button class="h-progress-btn" id="openProgressBtn" title="Ver mi progreso de estudio">
-        <span>📊</span> Mi progreso
+        <span>📊</span> <span class="h-progress-label">Mi progreso</span>
       </button>
     </div>
   </div>
@@ -815,3 +954,4 @@ footer.foot a:hover{text-decoration:underline}
 <script src="app.js"></script>
 </body>
 </html>
+
